@@ -1,0 +1,237 @@
+@import url('../css/maps.css');
+
+/*
+colors and styles
+1.Header Singlepage
+2.Banner Hero
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+10.
+==============================================
+/*
+postions and responsives styles
+1.Resposive header pc
+2.Banner Hero
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+10.
+
+*/
+
+
+/*=================================================
+1 . - Header-Mainpage colors and styles
+===================================================*/
+
+.header_container_nav {
+    background-color: var(--bg_white);
+
+}
+
+.logo_container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+
+}
+
+.nav_container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 50px;
+    margin-left: 60px;
+}
+
+.nav_navigation {
+    color: var(--main_Color);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 1.5%;
+
+
+}
+
+.nav_item {
+    display: block ruby;
+}
+
+.icon_phone {
+    max-width: 20px;
+}
+
+.nav_container>.nav_navigation>.nav_item>.nav_item_information {
+    font-size: var(--font_p3);
+    padding: 12px;
+    font-family: var(--font-noto);
+}
+
+.nav_container>.nav_navigation>.nav_item>.nav_item_phone {
+
+    background-size: 30px;
+    background-position: 2px 2px 2px 2px;
+    background-repeat: no-repeat;
+    font-size: var(--font_p2);
+    font-weight: bold;
+    padding-top: 8px;
+    font-family: var(--font-noto);
+    display: block ruby;
+}
+
+embed {
+    width: 20px;
+}
+
+.nav_container>span {
+    color: var(--main_Color);
+}
+
+.nav_time {
+    color: var(--main_Color);
+}
+
+.nav_time {
+    margin-right: 50px;
+    color: var(--main_Color);
+    font-size: var(--font_p4);
+    display: flex;
+    direction: rtl;
+
+}
+
+/*=================================================
+2 . - Banner colors and styles
+===================================================*/
+.banner {
+    background-image: url("../assets/img/Singlepage/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50% 31%;
+    top: 100%;
+    transition: top 0.5s;
+    height: 400px;
+    position: relative;
+}
+
+.banner:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--over_lay);
+}
+
+.text-title {
+    margin-left: 23%;
+    position: static;
+    margin-top: 20.99%;
+
+}
+
+.text-title>h2 {
+    color: var(--bg_white);
+    font-family: var(--font-lato);
+    font-size: var(--font_h3);
+    font-weight: 500;
+    letter-spacing: 6px;
+
+}
+
+.text-title>h1 {
+    color: var(--bg_white);
+    font-family: var(--font-noto);
+    font-size: var(--font_h2);
+    font-weight: 500;
+
+
+}
+
+
+.text-title>.linea {
+
+    border: 0;
+    height: .2rem;
+    background-image: linear-gradient(170deg, #fff, #fff, #f0f0f0, #f0f0f0, #f0f0f0, var(--gradient_main), var(--gradient_main), var(--gradient_main));
+}
+
+/*=============================================
+1.-RESPONSIVE PC
+SCREEN DESKTOP LARGE - LARGE (lg) 
+=============================================*/
+
+@media(min-width:1200px) {
+    /*=================================================
+1 . - Header-Mainpage
+===================================================*/
+
+    .logo-img {
+        max-width: 60%;
+        height: auto;
+        margin-left: 50px;
+        margin-right: 50px;
+
+    }
+
+    .nav_container>.nav_navigation>.nav_item {
+        padding-right: 10px;
+    }
+}
+
+/*=============================================
+2.-RESPONSIVE ESCRITORIO MEDIANO
+PANTALLA DE ESCRITORIO MEDIANO - MEDIUM (md) - revisamos en tablet horizontal 1024px
+=============================================*/
+
+@media(max-width:1199px) and (min-width:992px) {
+
+
+    /*CABEZOTE*/
+
+
+
+}
+
+/*=============================================
+4.-RESPONSIVE  PANTALLA DE TABLET
+PANTALLA DE TABLET - SMALL (sm) - revisamos en tablet vertical 768px
+=============================================*/
+
+@media(max-width:991px) and (min-width:768px) {}
+
+/*=============================================
+5.-RESPONSIVE PANTALLA DE PHONES
+PANTALLA DE PHONES - EXTRA SMALL (xs) - revisamos en movil horizontal 480px o vertical 320px
+=============================================*/
+
+@media(max-width:767px) {
+
+    .logo-img {
+        max-width: 50%;
+        height: auto;
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+    }
+
+
+}

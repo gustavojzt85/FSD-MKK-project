@@ -1,0 +1,369 @@
+@font-face {
+    font-family: 'lato', sans-serif;
+    src: url("../css/fonts/Lato/Lato-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Noto Sans JP', sans-serif;
+    src: url("../css/fonts/NotoSansjp/NotoSansJP-Bold.otf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Noto Sans JP', sans-serif;
+    src: url("../css/fonts/NotoSansjp/NotoSansJP-Medium.otf");
+    font-weight: medium;
+}
+
+@font-face {
+    font-family: 'Noto Sans JP', sans-serif;
+    src: url("../css/fonts/NotoSansjp/NotoSansJP-Regular.otf");
+    font-weight: Regular;
+}
+
+:root {
+    --main_Color: #182045;
+    --plane_Color: #525872;
+    --over_lay: #103c4fa6;
+    --sub_Color: #8ea8b3;
+    --btn_Color: #182045a6;
+    --bg_white: #ffffff;
+    --sub_bg_Color: #e7f4fa;
+    --gradient_main: #248aff;
+    --gradiend_sub: #42c3ff;
+    --font_h1: 130px;
+    --font_h2: 64px;
+    --font_h3: 29px;
+    --font_p: 30px;
+    --font_p2: 20px;
+    --font_p3: 14px;
+    --font_p4: 10px;
+    --font-noto: 'Noto Sans JP', sans-serif;
+    --font-lato: 'Lato', sans-serif;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+
+}
+
+/*=============================================
+1.-GLOBAL
+2.-RESPONSIVE PC
+3.-RESPONSIVE PANTALLA DE ESCRITORIO MEDIANO
+4.-RESPONSIVE PANTALLA DE TABLET
+5.-RESPONSIVE PANTALLA DE PHONES
+=============================================*/
+/*=============================================
+1.-GLOBAL
+=============================================*/
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.content-fluid {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: auto;
+
+}
+
+.content {
+    position: relative;
+    margin: auto;
+    width: 92%;
+    height: auto;
+}
+
+.row {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    clear: both;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 0px;
+}
+
+
+
+/*=============================================
+2.-RESPONSIVE PC
+PANTALLA DE ESCRITORIO GRANDE - LARGE (lg) - revisamos en portatil o pc
+=============================================*/
+
+@media(min-width:1200px) {
+
+    .col-lg-12 {
+        width: 100%;
+    }
+
+    .col-lg-11 {
+        width: 91.66666667%;
+    }
+
+    .col-lg-10 {
+        width: 83.33333333%;
+    }
+
+    .col-lg-9 {
+        width: 75%;
+    }
+
+    .col-lg-8 {
+        width: 66.66666667%;
+    }
+
+    .col-lg-7 {
+        width: 58.33333333%;
+    }
+
+    .col-lg-6 {
+        width: 50%;
+    }
+
+    .col-lg-5 {
+        width: 41.66666667%;
+    }
+
+    .col-lg-4 {
+        width: 33.33333333%;
+    }
+
+    .col-lg-3 {
+        width: 25%;
+    }
+
+    .col-lg-2 {
+        width: 16.66666667%;
+    }
+
+    .col-lg-1 {
+        width: 8.33333333%;
+    }
+
+    .col-lg-0 {
+        display: none;
+    }
+
+
+}
+
+/*=============================================
+3.-RESPONSIVE ESCRITORIO MEDIANO
+PANTALLA DE ESCRITORIO MEDIANO - MEDIUM (md) - revisamos en tablet horizontal 1024px
+=============================================*/
+
+@media(max-width:1199px) and (min-width:992px) {
+
+    .col-md-12 {
+        width: 100%;
+    }
+
+    .col-md-11 {
+        width: 91.66666667%;
+    }
+
+    .col-md-10 {
+        width: 83.33333333%;
+    }
+
+    .col-md-9 {
+        width: 75%;
+    }
+
+    .col-md-8 {
+        width: 66.66666667%;
+    }
+
+    .col-md-7 {
+        width: 58.33333333%;
+    }
+
+    .col-md-6 {
+        width: 50%;
+    }
+
+    .col-md-5 {
+        width: 41.66666667%;
+    }
+
+    .col-md-4 {
+        width: 33.33333333%;
+    }
+
+    .col-md-3 {
+        width: 25%;
+    }
+
+    .col-md-2 {
+        width: 16.66666667%;
+    }
+
+    .col-md-1 {
+        width: 8.33333333%;
+    }
+
+    .col-md-0 {
+        display: none;
+    }
+
+    /*CABEZOTE*/
+
+
+
+}
+
+/*=============================================
+4.-RESPONSIVE  PANTALLA DE TABLET
+PANTALLA DE TABLET - SMALL (sm) - revisamos en tablet vertical 768px
+=============================================*/
+
+@media(max-width:991px) and (min-width:768px) {
+
+    .col-sm-12 {
+        width: 100%;
+    }
+
+    .col-sm-11 {
+        width: 91.66666667%;
+    }
+
+    .col-sm-10 {
+        width: 83.33333333%;
+    }
+
+    .col-sm-9 {
+        width: 75%;
+    }
+
+    .col-sm-8 {
+        width: 66.66666667%;
+    }
+
+    .col-sm-7 {
+        width: 58.33333333%;
+    }
+
+    .col-sm-6 {
+        width: 50%;
+    }
+
+    .col-sm-5 {
+        width: 41.66666667%;
+    }
+
+    .col-sm-4 {
+        width: 33.33333333%;
+    }
+
+    .col-sm-3 {
+        width: 25%;
+    }
+
+    .col-sm-2 {
+        width: 16.66666667%;
+    }
+
+    .col-sm-1 {
+        width: 8.33333333%;
+    }
+
+    .col-sm-0 {
+        display: none;
+    }
+
+
+
+
+}
+
+/*=============================================
+5.-RESPONSIVE PANTALLA DE PHONES
+PANTALLA DE PHONES - EXTRA SMALL (xs) - revisamos en movil horizontal 480px o vertical 320px
+=============================================*/
+
+@media(max-width:767px) {
+
+    .col-xs-12 {
+        width: 100%;
+    }
+
+    .col-xs-11 {
+        width: 91.66666667%;
+    }
+
+    .col-xs-10 {
+        width: 83.33333333%;
+    }
+
+    .col-xs-9 {
+        width: 75%;
+    }
+
+    .col-xs-8 {
+        width: 66.66666667%;
+    }
+
+    .col-xs-7 {
+        width: 58.33333333%;
+    }
+
+    .col-xs-6 {
+        width: 50%;
+    }
+
+    .col-xs-5 {
+        width: 41.66666667%;
+    }
+
+    .col-xs-4 {
+        width: 33.33333333%;
+    }
+
+    .col-xs-3 {
+        width: 25%;
+    }
+
+    .col-xs-2 {
+        width: 16.66666667%;
+    }
+
+    .col-xs-1 {
+        width: 8.33333333%;
+    }
+
+    .col-xs-0 {
+        display: none;
+    }
+
+  
+
+
+
+
+}

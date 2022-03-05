@@ -1,0 +1,183 @@
+@import url('../css/maps.css');
+
+/*
+colors and styles
+1.Header Mainpage
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+10.
+==============================================
+/*
+postions and responsives styles
+1.Resposive header pc
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+10.
+
+*/
+
+
+/*=================================================
+1 . - Header-Mainpage colors and styles
+===================================================*/
+
+.header_container_nav {
+    background-color: black;
+
+}
+
+.logo_container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+
+}
+
+.nav_container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 50px;
+    margin-left: 60px;
+}
+
+.nav_navigation {
+    color: var(--bg_white);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 1.5%;
+
+
+}
+
+.nav_item {
+    display: block ruby;
+}
+
+.icon_phone {
+    max-width: 20px;
+}
+
+.nav_container>.nav_navigation>.nav_item>.nav_item_information {
+    font-size: var(--font_p3);
+    padding: 12px;
+    font-family: var(--font-noto);
+}
+
+.nav_container>.nav_navigation>.nav_item>.nav_item_phone {
+
+    background-size: 30px;
+    background-position: 2px 2px 2px 2px;
+    background-repeat: no-repeat;
+    font-size: var(--font_p2);
+    font-weight:bold;
+    padding-top: 8px;
+    font-family: var(--font-noto);
+    display: block ruby;
+}
+
+embed {
+    width: 20px;
+}
+
+.nav_container>span {
+    color: var(--bg_white);
+}
+
+.nav_time {
+    color: var(--bg_white);
+}
+
+.nav_time {
+    margin-right: 50px;
+    color: var(--bg_white);
+    font-size: var(--font_p4);
+    display: flex;
+    direction: rtl;
+
+}
+
+
+
+
+
+/*=============================================
+1.-RESPONSIVE PC
+SCREEN DESKTOP LARGE - LARGE (lg) 
+=============================================*/
+
+@media(min-width:1200px) {
+    /*=================================================
+1 . - Header-Mainpage
+===================================================*/
+
+    .logo-img {
+        max-width: 60%;
+        height: auto;
+        margin-left: 50px;
+        margin-right: 50px;
+
+    }
+
+    .nav_container>.nav_navigation>.nav_item {
+        padding-right: 10px;
+    }
+}
+
+/*=============================================
+2.-RESPONSIVE ESCRITORIO MEDIANO
+PANTALLA DE ESCRITORIO MEDIANO - MEDIUM (md) - revisamos en tablet horizontal 1024px
+=============================================*/
+
+@media(max-width:1199px) and (min-width:992px) {
+
+
+    /*CABEZOTE*/
+
+
+
+}
+
+/*=============================================
+4.-RESPONSIVE  PANTALLA DE TABLET
+PANTALLA DE TABLET - SMALL (sm) - revisamos en tablet vertical 768px
+=============================================*/
+
+@media(max-width:991px) and (min-width:768px) {}
+
+/*=============================================
+5.-RESPONSIVE PANTALLA DE PHONES
+PANTALLA DE PHONES - EXTRA SMALL (xs) - revisamos en movil horizontal 480px o vertical 320px
+=============================================*/
+
+@media(max-width:767px) {
+
+    .logo-img {
+        max-width: 50%;
+        height: auto;
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+    }
+
+
+}

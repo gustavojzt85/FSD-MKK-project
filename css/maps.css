@@ -29,10 +29,11 @@
     --sub_Color: #8ea8b3;
     --btn_Color: #182045a6;
     --bg_white: #ffffff;
+    --sub_overlay:rgba(3,19,33,0.5);
     --sub_bg_Color: #e7f4fa;
     --gradient_main: #248aff;
     --gradiend_sub: #42c3ff;
-    --font_h1: 130px;
+    --font_h1: 75px;
     --font_h2: 64px;
     --font_h3: 29px;
     --font_p: 30px;
@@ -361,7 +362,7 @@ PANTALLA DE PHONES - EXTRA SMALL (xs) - revisamos en movil horizontal 480px o ve
         display: none;
     }
 
-  
+
 
 
 

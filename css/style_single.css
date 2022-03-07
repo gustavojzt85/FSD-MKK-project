@@ -4,8 +4,8 @@
 colors and styles
 1.Header Singlepage
 2.Banner Hero
-3.
-4.
+3.Breadcumbs
+4.Eyecatch
 5.
 6.
 7.
@@ -17,8 +17,8 @@ colors and styles
 postions and responsives styles
 1.Resposive header pc
 2.Banner Hero
-3.
-4.
+3.Breadcumbs
+4.Eyecatch
 5.
 6.
 7.
@@ -33,8 +33,11 @@ postions and responsives styles
 1 . - Header-Mainpage colors and styles
 ===================================================*/
 
-.header_container_nav {
-    background-color: var(--bg_white);
+.logo-img {
+    max-width: 60%;
+    height: auto;
+    margin-left: 50px;
+    margin-right: 50px;
 
 }
 
@@ -48,11 +51,16 @@ postions and responsives styles
 
 }
 
+.header_container_nav {
+    background-color: var(--sub_bg_Color);
+}
+
+
+
 .nav_container {
     margin-top: 30px;
     margin-bottom: 30px;
-    margin-right: 50px;
-    margin-left: 60px;
+    margin-left: 50px;
 }
 
 .nav_navigation {
@@ -62,13 +70,14 @@ postions and responsives styles
     justify-content: flex-end;
     margin-left: 50px;
     margin-right: 50px;
-    padding-top: 1.5%;
-
-
 }
 
 .nav_item {
     display: block ruby;
+}
+
+.nav_container>.nav_navigation>.nav_item {
+    padding-right: 10px;
 }
 
 .icon_phone {
@@ -77,20 +86,15 @@ postions and responsives styles
 
 .nav_container>.nav_navigation>.nav_item>.nav_item_information {
     font-size: var(--font_p3);
-    padding: 12px;
     font-family: var(--font-noto);
+    padding: 6px;
 }
 
 .nav_container>.nav_navigation>.nav_item>.nav_item_phone {
-
-    background-size: 30px;
-    background-position: 2px 2px 2px 2px;
-    background-repeat: no-repeat;
     font-size: var(--font_p2);
     font-weight: bold;
-    padding-top: 8px;
     font-family: var(--font-noto);
-    display: block ruby;
+
 }
 
 embed {
@@ -114,6 +118,16 @@ embed {
 
 }
 
+
+
+
+
+
+
+
+
+
+
 /*=================================================
 2 . - Banner colors and styles
 ===================================================*/
@@ -136,7 +150,7 @@ embed {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: var(--over_lay);
+    background-color: var(--sub_overlay);
 }
 
 .text-title {
@@ -172,6 +186,92 @@ embed {
     background-image: linear-gradient(170deg, #fff, #fff, #f0f0f0, #f0f0f0, #f0f0f0, var(--gradient_main), var(--gradient_main), var(--gradient_main));
 }
 
+/*=================================================
+3 . - Breadcumbs colors and styles
+===================================================*/
+
+.breadcumbs {
+    background-color: var(--sub_bg_Color);
+}
+
+.prbreadcums {
+    margin-left: 13.55%;
+    position: static;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-family: var(--font-lato);
+    color: var(--main_Color);
+
+}
+
+.prbreadcums>a {
+    font-family: var(--font-lato);
+    color: var(--sub_Color);
+}
+
+
+/*=================================================
+4 . - eyecatch colors and styles
+===================================================*/
+
+.eyecatch {
+    margin-top: 100px;
+}
+
+.eyecatch-article {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.banner-background {
+    background-image: url("../assets/img/Singlepage/eye.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 13%;
+    top: 100%;
+    transition: top 0.5s;
+    height: 350px;
+    width: 1690px;
+    position: relative;
+    margin-left: 3%;
+    margin-right: auto;
+
+}
+
+.main {
+    background-color: var(--bg_white);
+    z-index: 99;
+    position: absolute;
+    margin-top: -8%;
+    margin-left: 20%;
+    width: 1200px;
+    padding: 5%;
+    margin-right: 20%;
+}
+
+.main>.title_banner_main {
+    color: var(--sub_Color);
+    font-size: var(--font_h3);
+    letter-spacing: 6px;
+    font-family: var(--font-lato);
+}
+
+.main>.title_banner_ {
+    color: var(--main_Color);
+    font-size: var(--font_h2);
+    font-family: var(--font-noto);
+    padding-bottom: 6%;
+    padding-top: 1.5%;
+}
+
+
+.main>p {
+    font-size: var(--font_p);
+    color: var(--plane_Color);
+    line-height: 55px;
+}
+
+
 /*=============================================
 1.-RESPONSIVE PC
 SCREEN DESKTOP LARGE - LARGE (lg) 
@@ -182,17 +282,13 @@ SCREEN DESKTOP LARGE - LARGE (lg)
 1 . - Header-Mainpage
 ===================================================*/
 
-    .logo-img {
-        max-width: 60%;
-        height: auto;
-        margin-left: 50px;
-        margin-right: 50px;
 
-    }
 
-    .nav_container>.nav_navigation>.nav_item {
-        padding-right: 10px;
-    }
+
+
+
+
+
 }
 
 /*=============================================
@@ -223,14 +319,137 @@ PANTALLA DE PHONES - EXTRA SMALL (xs) - revisamos en movil horizontal 480px o ve
 
 @media(max-width:767px) {
 
-    .logo-img {
-        max-width: 50%;
-        height: auto;
-        margin-left: 25%;
-        margin-right: 25%;
-        margin-top: 30px;
-        margin-bottom: 30px;
+    .logo_container {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        margin-bottom: 10px;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
 
+    .nav_container {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        margin: 0px 0px 30px 0px;
+
+
+    }
+
+    .logo-img {
+        max-width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+
+
+    }
+
+
+    .nav_navigation {
+        color: var(--main_Color);
+        display: flex;
+        justify-content: center;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+
+    .nav_time {
+        display: flex;
+        justify-content: center;
+        margin: 0px;
+    }
+
+
+
+    /*=================================================
+2 . - Banner responsive
+===================================================*/
+
+    .banner {
+        background-image: url("../assets/img/Singlepage/banner.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: 77% 50%;
+        top: 100%;
+        transition: top 0.5s;
+        height: 200px;
+        position: relative;
+    }
+
+    .text-title>h1 {
+
+        font-size: var(--font_h3);
+    }
+
+    .text-title>h2 {
+        font-size: var(--font_p2);
+
+    }
+
+    .text-title {
+        margin-left: 3%;
+
+        margin-top: 18%;
+    }
+
+    .text-title>.linea {
+        width: 250px;
+    }
+
+    /*=================================================
+3 . - Breadcumbs responsive
+===================================================*/
+
+    .prbreadcums {
+        margin-left: 2.55%;
+        position: static;
+        margin-top: 3%;
+        margin-bottom: 3%;
+        font-family: var(--font-lato);
+        color: var(--main_Color);
+    }
+
+    /*=================================================
+4 . - eyecatch  responsive
+===================================================*/
+    .eyecatch-article {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .banner-background {
+        height: 200px;
+        width: auto;
+        position: relative;
+
+    }
+
+    .main {
+        margin-top: -40%;
+        width: auto;
+        padding: 5%;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .main>.title_banner_main {
+        font-size: var(--font_p3);
+        letter-spacing: 2px;
+
+
+    }
+
+    .main>.title_banner_ {
+        font-size: var(--font_h3);
+    }
+
+    .main>p {
+        font-size: var(--font_p3);
+        line-height: 33px;
     }
 
 

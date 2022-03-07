@@ -132,7 +132,7 @@ embed {
 2 . - Banner colors and styles
 ===================================================*/
 .banner {
-    background-image: url("../assets/img/Singlepage/banner.png");
+    background-image: url("../assets/img/singlepage/banner.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -224,7 +224,7 @@ embed {
 }
 
 .banner-background {
-    background-image: url("../assets/img/Singlepage/eye.png");
+    background-image: url("../assets/img/singlepage/eye.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 13%;

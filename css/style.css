@@ -1,9 +1,10 @@
 @import url('../css/maps.css');
+@import url('../css/classy-nav.min.css');
 
 /*
 colors and styles
 1.Header Mainpage
-2.
+2.Navigaton
 3.
 4.
 5.
@@ -16,7 +17,7 @@ colors and styles
 /*
 postions and responsives styles
 1.Resposive header pc
-2.
+2.Navigaton
 3.
 4.
 5.
@@ -245,7 +246,7 @@ embed {
     position: absolute;
     text-transform: uppercase;
     font-size: var(--font_p2);
-    margin-bottom: 14.6%;
+
     font-family: var(--font-lato);
     color: var(--sub_Color);
 }
@@ -258,57 +259,144 @@ embed {
     background-image: linear-gradient(170deg, #fff, #fff, #f0f0f0, #f0f0f0, #f0f0f0, var(--gradient_main), var(--gradient_main), var(--gradient_main));
 }
 
+/*Navigation style */
 
-
-
-
-
-/*=============================================
-1.-RESPONSIVE PC
-SCREEN DESKTOP LARGE - LARGE (lg) 
-=============================================*/
-
-@media(min-width:1200px) {
-    /*=================================================
-1 . - Header-Mainpage
-===================================================*/
-
-    .logo-img {
-        max-width: 60%;
-        height: auto;
-        margin-left: 50px;
-        margin-right: 50px;
-
-    }
-
-    .nav_container>.nav_navigation>.nav_item {
-        padding-right: 10px;
-    }
+.header-area .academy-main-menu {
+    position: absolute;
+    width: 100%;
+    height: 85px;
+    background-color: transparent;
+    top: 82%;
+    z-index: 100;
+    left: 0;
+    right: 0;
 }
 
-/*=============================================
-2.-RESPONSIVE ESCRITORIO MEDIANO
-PANTALLA DE ESCRITORIO MEDIANO - MEDIUM (md) - revisamos en tablet horizontal 1024px
-=============================================*/
+.content-menu {
 
-@media(max-width:1199px) and (min-width:992px) {
-
-
-    /*CABEZOTE*/
+    position: relative;
+    margin: auto;
+    width: 58.33333333%;
 
 
 
 }
 
-/*=============================================
-4.-RESPONSIVE  PANTALLA DE TABLET
-PANTALLA DE TABLET - SMALL (sm) - revisamos en tablet vertical 768px
-=============================================*/
+.header-area .academy-main-menu .classy-nav-container {
+    background-color: transparent;
+}
 
-@media(max-width:991px) and (min-width:768px) {}
+.header-area .academy-main-menu .classy-navbar {
+    background-color: #f5f7fa;
+    height: 85px;
+    padding: 0;
+
+}
+
+
+.header-area .is-sticky .academy-main-menu {
+    position: fixed;
+    width: 100%;
+    height: 85px;
+    top: 0;
+    left: 0;
+    z-index: 3000;
+    background-color: #f5f7fa;
+    box-shadow: 0 5px 40px rgba(0, 0, 0, 0.2);
+}
+
+.header-area .is-sticky .academy-main-menu::after {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #83c331;
+    content: '';
+}
+
+/*ead*/
+
+.lead {
+    background-color: var(--sub_bg_Color);
+
+}
+
+.lead-text {
+    z-index: 1;
+    font-size: 120px;
+    color: var(--bg_white);
+    font-family: var(--font-lato);
+    font-weight: 900;
+}
+
+.content-lead-parragraf {
+    position: relative;
+    margin: auto;
+    width: 58.33333333%;
+
+}
+
+.content-lead-parragraf p {
+    font-size: var(--font_p);
+    font-family: var(--font-noto);
+    font-weight: var();
+
+
+}
+
+/*news*/
+.news-title {
+    text-align: center;
+}
+
+.news-list>ul>li {
+    display: flex;
+    justify-content: center;
+    padding: 9px;
+}
+
+.news-list>ul>li>img {
+    max-width: inherit;
+    height: 38px;
+
+}
+
+/*area 1*/
+
+/*area 2*/
+
+/*area 3*/
+
+/*instagram*/
+
+
+/*contact*/
+
+.contact {
+
+    background-image: url("../assets/img/contact/contact.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50% 31%;
+    top: 100%;
+    transition: top 0.5s;
+    height: 400px;
+    position: relative;
+
+}
+
+/*footer*/
+
+footer {
+    background: linear-gradient(170deg, var(--gradiend_sub), var(--gradient_main));
+}
+
 
 /*=============================================
-5.-RESPONSIVE PANTALLA DE PHONES
+1.-RESPONSIVE PANTALLA DE PHONES
 PANTALLA DE PHONES - EXTRA SMALL (xs) - revisamos en movil horizontal 480px o vertical 320px
 =============================================*/
 
@@ -376,7 +464,7 @@ PANTALLA DE PHONES - EXTRA SMALL (xs) - revisamos en movil horizontal 480px o ve
 
 
     .carousel_description {
-        left: -30%;
+        left: -28%;
         font-size: var(--font_p4);
         margin-bottom: 40%;
     }
@@ -385,4 +473,82 @@ PANTALLA DE PHONES - EXTRA SMALL (xs) - revisamos en movil horizontal 480px o ve
         width: 100%;
     }
 
+}
+
+
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {}
+
+
+
+/*=============================================
+2.-RESPONSIVE ESCRITORIO MEDIANO
+PANTALLA DE ESCRITORIO MEDIANO - MEDIUM (md) - revisamos en tablet horizontal 1024px
+=============================================*/
+
+@media(max-width:1199px) and (min-width:992px) {
+
+    .carousel_description {
+
+        margin-bottom: 4.6%;
+        margin-top: -14.6%;
+
+    }
+
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {}
+
+/* X-Large devices (large desktops, 1200px and up)*/
+@media only screen and (min-width: 1200px) {
+
+    /*=================================================
+1 . - Header-Mainpage
+===================================================*/
+
+    .logo-img {
+        max-width: 60%;
+        height: auto;
+        margin-left: 50px;
+        margin-right: 50px;
+
+    }
+
+    .nav_container>.nav_navigation>.nav_item {
+        padding-right: 10px;
+    }
+
+
+
+    .carousel_description {
+
+        margin-bottom: 4.6%;
+        margin-top: -18.6%;
+
+    }
+
+}
+
+/* XX-Large devices (larger desktops, 1400px and up)*/
+@media only screen and (min-width: 1400px) {
+    .carousel_description {
+
+        margin-bottom: 4.6%;
+        margin-top: -14.6%;
+    }
+}
+
+
+
+
+
+/* lXXX-Large devices (larger desktops, 1900px and up)*/
+@media only screen and (min-width: 1900px) {
+    .carousel_description {
+
+        margin-bottom: 4.6%;
+        margin-top: -10.6%;
+    }
 }

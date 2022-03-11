@@ -34,7 +34,8 @@
     --gradient_main: #248aff;
     --gradiend_sub: #42c3ff;
     --font_h1: 75px;
-    --font_h2: 64px;
+    --font_h2: 14px;
+    --font_h2_mb: 11px;
     --font_h3: 29px;
     --font_p: 30px;
     --font_p2: 20px;
@@ -101,8 +102,8 @@ body {
     width: 100%;
     height: auto;
     clear: both;
-    display: flex;
-    flex-flow: row wrap;
+    display: table;
+   
 }
 
 [class*="col-"] {

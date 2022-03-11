@@ -75,10 +75,10 @@
 
    </div>
 </section>
-<header class="header-area">
+<nav class="header-area">
  <!-- Navbar Area -->
         <div class="academy-main-menu">
-            <div class="classy-nav-container   breakpoint-off">
+            <div class="classy-nav-container  breakpoint-off">
                 <div class="content-menu">
                     <!-- Menu -->
                     <nav class="classy-navbar justify-content-between" id="academyNav">
@@ -121,7 +121,7 @@
                                             </ul>
                                       </div>
                                     </li>
-                                    <li><button>お問い合わせ</button></li>
+                                    <li class="button-fint" ><button class="button-menu"><embed type="image/svg+xml" src="assets/img/icons/iconmonstr-email-1.svg">お問い合わせ</button></li>
                                   </ul>
                             </div>
                             <!-- Nav End -->
@@ -130,12 +130,12 @@
                 </div>
             </div>
         </div>
-    </header>
+    </nav>
 
 <!---lead---->
 <section class="lead">
        <div  class="lead-text">
-           <h1>DVANCED FUSION</h1>
+           <h1>ADVANCED FUSION</h1>
         </div>
         <div  class="content-lead-parragraf ">
            <p>21世紀を迎え、急速に変化する社会情勢の中、我々金型業界においても更なる技術力の更新と、来るべき新たな文明への挑戦が求められております。</p>
@@ -147,32 +147,47 @@
 
 <!---news---->
 
-<section class="news content">
+<section class="news">
 	<div class="row">
        <div  class="news-title">
            <h4>NEWS</h4>
-		   <h2>お知らせ</h2>
+		   <h1>お知らせ</h1>
         </div>
         <div  class="news-list">
            <ul>
 		    <li >
-			 <img src="assets/img/news/slide01.png">
-			  <span>2022.02.20</span>
-			  <a href="#">【重要】タイトルが入りますタイトルが入りますタイトルが入りますタイトルが入りますタイトルが入ります</a>
+			 <div class="content-img">
+              <img class="crops" src="assets/img/news/slide01.png">
+			 </div>
+			  
+			  <a href="#"> <span>2022.02.20</span>【重要】タイトルが入りますタイトルが入りますタイトルが入りますタイトルが入りますタイトルが入ります</a>
+			  </li>
+			<li>
+		    <div  class="content-img">
+				<img  class="crops" src="assets/img/news/slide02.png">
+			</div>
+			
+			  <a href="#"> <span>2022.02.20</span>【新機能リリース】タイトルが入りますタイトルが入りますタイトルが入りますタイトルタイトルが入ります</a>
+			 </li>
+			<li>
+				<div class="content-img">
+					<img class="crops" src="assets/img/news/slide03.png">
+				</div>
+				
+			  <a href="#"> <span>2022.02.20</span>【新機能リリース】タイトルが入りますタイトルが入りますタイトルが入りますタイトルタイトルが入ります</a>
 			</li>
-			<li >
-			<img src="assets/img/news/slide02.png">
-			  <span>2022.02.20</span>
-			  <a href="#">【新機能リリース】タイトルが入りますタイトルが入りますタイトルが入りますタイトルタイトルが入ります</a>
-			</li>
-			<li ><img src="assets/img/news/slide03.png">
-			  <span>2022.02.20</span>
-			  <a href="#">【新機能リリース】タイトルが入りますタイトルが入りますタイトルが入りますタイトルタイトルが入ります</a></li>
-			<li style="background-color:red;"><img src="assets/img/news/logo-ig&news.svg">
-			  <span>2022.02.20</span>
-			  <a href="#">【新機能リリース】タイトルが入りますタイトルが入りますタイトルが入りますタイトルタイトルが入ります</a></li>
+			<li>
+				<div class="content-img">
+					<img class="crops svg" src="assets/img/news/logo-ig&news.svg">
+				</div>
+			   
+			  <a href="#"> <span>2022.02.20</span>【新機能リリース】タイトルが入りますタイトルが入りますタイトルが入りますタイトルタイトルが入ります</a>
+			 </li>
            </ul>
-            <button>Read More</button>		   
+		   <div class="read-more-list">
+             <button class="select-item-read">READ MORE</button>	
+		   </div>
+        	   
 	  </div>
 	</div>
 </section>
@@ -351,6 +366,7 @@
      
     
     <script src ="js/jquery-2.2.4.min.js"></script>
+	<script src ="js/plugin.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/navigation.js"></script>
 </body>

@@ -70,8 +70,8 @@ img {
 .classy-navbar .nav-brand,
 .classy-navbar .nav-brand:focus,
 .classy-navbar .nav-brand:hover {
-    font-size: var(--font_p3);
-    font-weight: 500
+    font-size: var(--font_parrafo_pc);
+    font-weight: var(--font_Bold);
 }
 
 .classy-nav-container.classy-sticky {

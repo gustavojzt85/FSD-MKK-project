@@ -58,7 +58,7 @@ postions and responsives styles
 }
 
 .nav_navigation {
-    color: var(--bg_white);
+    color: var(--color_background);
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
@@ -78,15 +78,15 @@ postions and responsives styles
 }
 
 .nav_container>.nav_navigation>.nav_item>.nav_item_information {
-    font-size: var(--font_p3);
+    font-size: var(--font_parrafo_pc);
     padding: 6px;
     font-family: var(--font-noto);
 }
 
 .nav_container>.nav_navigation>.nav_item>.nav_item_phone {
-    font-size: var(--font_p2);
-    font-weight: bold;
+    font-size: var(--font_parrafo_pc);
     font-family: var(--font-noto);
+    font-weight: var(--font_Regular);
 
 }
 
@@ -94,22 +94,17 @@ embed {
     width: 20px;
 }
 
-.nav_container>span {
-    color: var(--bg_white);
-}
-
 .nav_time {
-    color: var(--bg_white);
-}
-
-.nav_time {
+    color: var(--color_background);
     margin-right: 50px;
-    color: var(--bg_white);
-    font-size: var(--font_p4);
+    font-family: var(--font-noto);
+    font-size: var(--font_navigation_nav_time_pc);
+    font-weight: var(--font_Regular);
     display: flex;
     direction: rtl;
 
 }
+
 
 /*=================================================
 2 . - slider colors and styles
@@ -230,24 +225,25 @@ embed {
     text-align: left;
     color: #fff;
     z-index: 1;
-    margin-left: 50px;
+    margin-left: 100px;
 }
 
 .carousel_title {
     font-family: var(--font-noto);
-    font-size: var(--font_h1);
-    font-weight: 600;
+    font-size: var(--font_h1_slider_pc);
+    font-weight: var(--font_Bold);
 }
 
 .carousel_description {
     transform-origin: 100% 50%;
     transform: rotateZ(-90deg);
-    left: -256px;
+    left: -215px;
     position: absolute;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
-    font-size: var(--font_p2);
+    font-size: 15px;
     font-family: var(--font-lato);
-    color: var(--sub_Color);
+    color: var(--color_sub);
 }
 
 
@@ -279,6 +275,10 @@ embed {
 
 
 
+}
+
+.sticky-wrapper {
+    height: 0px !important;
 }
 
 .header-area .academy-main-menu .classy-nav-container {
@@ -323,12 +323,18 @@ embed {
 .button-menu {
     background: linear-gradient(170deg, var(--gradiend_sub), var(--gradient_main));
     padding: 6px 18px 6px;
-    font-size: var(--font_p3);
+    font-size: var(--font_parrafo_pc);
     font-family: var(--font-noto);
-    color: var(--bg_white);
+    color: var(--color_background);
     border-radius: 12px;
     border-color: transparent;
     display: flex;
+    transition: all 0.4s ease-in;
+}
+
+.button-menu:hover {
+    background-color: var(--gradiend_sub);
+
 }
 
 .button-menu embed {
@@ -341,33 +347,36 @@ embed {
 /*lead*/
 
 .lead {
-    background-color: var(--sub_bg_Color);
-    margin-top: -49px;
+    background-color: var(--color_sub_background);
+    margin-top: -50px;
 
 }
 
 .lead-text {
     font-size: 120px;
-    color: var(--bg_white);
+    color: var(--color_background);
     font-family: var(--font-lato);
-    font-weight: 900;
+    font-weight: var(--font_Bold);
     letter-spacing: 1.5px;
     margin-bottom: -38px;
+
 }
 
 .content-lead-parragraf {
     position: relative;
     margin: auto;
-    width: 58.33333333%;
-    padding-block-end: 80px;
+    width: 37%;
+    padding-block-end: 50px;
 
 }
 
 .content-lead-parragraf p {
-
-    font-size: var(--font_p);
+    color: var(--color_main);
+    font-size: var(--font_parrafo_lead_pc);
     font-family: var(--font-noto);
-    font-weight: var();
+    font-weight: var(--font_Bold);
+    letter-spacing: 2px;
+    line-height: 2;
 
 
 }
@@ -394,20 +403,21 @@ embed {
     border-top-width: 1px;
 }
 
-.news-title>h4 {
+.news-title>.title-lat {
     margin-bottom: 20px;
-    color: var(--sub_Color);
+    color: var(--color_sub);
     letter-spacing: 1.5px;
     font-family: var(--font-lato);
-    font-weight: 700;
+    font-weight: var(--font_Bold);
+    font-size: var(--font_h2_lato_pc);
 }
 
-.news-title>h1 {
+.news-title>.title-not {
     margin-bottom: 45px;
     font-family: var(--font-noto);
-    color: var(--main_Color);
-    font-weight: 700;
-    font-size: var(--font_h1);
+    color: var(--color_main);
+    font-weight: var(--font_Bold);
+    font-size: var(--font_h2_pc_noto);
 }
 
 .news-title {
@@ -446,17 +456,17 @@ embed {
 
 
 .content-img>.svg {
-    background-color: var(--sub_bg_Color);
+    background-color: var(--color_sub_background);
     padding: 27px;
 }
 
 
-.news-list>ul>li>a>span {
+.news-list>ul>li>p>a>span {
     transition: all 3s ease;
     margin-left: 20px;
     margin-right: 20px;
     font-family: var(--font-lato);
-    background-color: var(--sub_Color);
+    background-color: var(--color_sub);
     padding: 5px;
 
 }
@@ -464,28 +474,28 @@ embed {
 
 
 
-.news-list>ul>li>a:hover {
+.news-list>ul>li>p>a:hover {
     color: var(--gradient_main);
 }
 
-.news-list>ul>li>a:hover span {
-    color: white;
+.news-list>ul>li>p>a:hover span {
+    color: var(--color_background);
     background-color: var(--gradient_main);
 }
 
 .news-list>ul>li>span:hover,
 .news-list>ul>li:hover {
     background-color: var(--gradient_main);
-    background-color: var(--sub_bg_Color);
+    background-color: var(--color_sub_background);
 }
 
 
 
-.news-list>ul>li>a {
+.news-list>ul>li>p>a {
     font-family: var(--font-noto);
-    color: var(--plane_Color);
-    font-weight: 400;
-    font-size: (--font_p3);
+    color: var(--color_plane);
+    font-weight: var(--font_Regular);
+    font-size: var(--font_parrafo_pc);
 }
 
 .read-more-list {
@@ -500,8 +510,8 @@ embed {
     margin-top: 6px;
     font-family: var(--font-lato);
     letter-spacing: 1.5px;
-    font-size: var(--font_p3);
-    background-color: var(--bg_white);
+    font-size: var(--font_parrafo_pc);
+    background-color: var(--color_background);
     padding: 10px;
     font-weight: 500;
     border-radius: 2px;
@@ -513,18 +523,41 @@ embed {
 
 .read-more-list>.select-item-read:hover {
 
-    border: 2px solid var(--main_Color);
+    border: 2px solid var(--color_main);
     padding-right: 5px;
     padding-left: 5px;
-    color: var(--bg_white);
-    background-color: var(--main_Color);
-    
+    color: var(--color_background);
+    background-color: var(--color_main);
+
 
 
 
 }
 
 /*area 1*/
+.background-Area1 {
+    background-color: var(--color_sub_background);
+
+    height: 25%;
+}
+
+.engine {
+    background-color: var(--color_background);
+}
+
+.engine embed {
+    width: 20%;
+}
+
+.Area1 {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 58.33333333%;
+}
+
 
 /*area 2*/
 
@@ -708,8 +741,7 @@ PANTALLA DE ESCRITORIO MEDIANO - MEDIUM (md) - revisamos en tablet horizontal 10
 /* lXXX-Large devices (larger desktops, 1900px and up)*/
 @media only screen and (min-width: 1900px) {
     .carousel_description {
-
-        margin-bottom: 4.6%;
+        margin-bottom: 3%;
         margin-top: -10.6%;
     }
 }

@@ -23,32 +23,39 @@
 }
 
 :root {
-    --main_Color: #182045;
-    --plane_Color: #525872;
-    --over_lay: #103c4fa6;
-    --sub_Color: #8ea8b3;
-    --btn_Color: #182045a6;
-    --bg_white: #ffffff;
-    --sub_overlay:rgba(3,19,33,0.5);
-    --sub_bg_Color: #e7f4fa;
+    --color_main: #182045;
+    --color_plane: #525872;
+    --color_filtro: rgba(3, 19, 33, 0.5);
+    --color_sub: #8ea8b3;
+    --color_button: #182045;
+    --color_background: #ffffff;
+    --color_sub_background: #e7f4fa;
     --gradient_main: #248aff;
     --gradiend_sub: #42c3ff;
-    --font_h1: 75px;
-    --font_h2: 14px;
-    --font_h2_mb: 11px;
-    --font_h3: 29px;
-    --font_p: 30px;
-    --font_p2: 20px;
-    --font_p3: 14px;
-    --font_p4: 10px;
+    --font_h1_slider_pc: 65px;
+    --font_h1_slider_mb: 44px;
+    --font_h1_sigle_pc: 40px;
+    --font_h1_sigle_mb: 28px;
+    --font_h2_pc_noto: 32px;
+    --font_h2_mb_noto: 22px;
+    --font_h2_lato_pc: 14px;
+    --font_h2_lato_mb: 11px;
+    --font_h3_pc: 24px;
+    --font_h3_mb: 18px;
+    --font_h4_pc: 20px;
+    --font_h4_mb: 16px;
+    --font_h5_pc: 18px;
+    --font_h5_mb: 15px;
+    --font_parrafo_pc: 15px;
+    --font_parrafo_mb: 13px;
+    --font_parrafo_lead_pc:17px;
+    --font_navigation_nav_time_pc: 12px;
+    --font_navigation_nav_time_mb: 8px;
+    --font_Regular: 400;
+    --font_Medium: 500;
+    --font_Bold: 700;
     --font-noto: 'Noto Sans JP', sans-serif;
     --font-lato: 'Lato', sans-serif;
-    --breakpoint-xs: 0;
-    --breakpoint-sm: 576px;
-    --breakpoint-md: 768px;
-    --breakpoint-lg: 992px;
-    --breakpoint-xl: 1200px;
-
 }
 
 /*=============================================
@@ -103,7 +110,7 @@ body {
     height: auto;
     clear: both;
     display: table;
-   
+
 }
 
 [class*="col-"] {

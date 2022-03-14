@@ -1,5 +1,7 @@
 @import url('../css/maps.css');
 
+@import url('../css/classy-nav.min.css');
+
 /*
 colors and styles
 1.Header Singlepage
@@ -271,6 +273,192 @@ embed {
     color: var(--plane_Color);
     line-height: 55px;
 }
+
+/*===========================================
+Navbar 
+==============================================*/
+.header-area .academy-main-menu {
+    position: absolute;
+    width: 100%;
+
+    background-color: transparent;
+    top: 10%;
+    z-index: 1000;
+    left: 0;
+    right: 0;
+}
+
+.content-menu {
+
+    position: relative;
+    margin: auto;
+    width: 58.33333333%;
+    float: right;
+
+
+
+}
+
+.sticky-wrapper {
+    height: 0px !important;
+}
+
+.header-area .academy-main-menu .classy-nav-container {
+    background-color: transparent;
+}
+
+.header-area .academy-main-menu .classy-navbar {
+    background-color: #f5f7fa;
+    height: 50px;
+    padding: 0;
+
+}
+
+
+.header-area .is-sticky .academy-main-menu {
+    position: fixed;
+    width: 100%;
+    height: 49px;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #f5f7fa;
+    box-shadow: 0 5px 40px rgba(0, 0, 0, 0.2);
+    background-image: url("../assets/img/icons/logo-blue.svg");
+    background-repeat: no-repeat;
+    background-position-x: 2%;
+
+}
+
+
+.header-area .is-sticky .academy-main-menu::after {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    content: '';
+}
+
+
+.button-menu {
+    background: linear-gradient(170deg, var(--gradiend_sub), var(--gradient_main));
+    padding: 6px 18px 6px;
+    font-size: var(--font_parrafo_pc);
+    font-family: var(--font-noto);
+    color: var(--color_background);
+    border-radius: 12px;
+    border-color: transparent;
+    display: flex;
+    transition: all 0.4s ease-in;
+}
+
+.button-menu:hover {
+    background-color: var(--gradiend_sub);
+
+}
+
+.button-menu embed {
+    width: 28px;
+    padding-right: 4px;
+
+
+}
+
+/**-----footer*/
+
+.title-footer {
+
+    font-family: var(--font-noto);
+    font-size: var(--font_parrafo_pc);
+    color: var(--color_background);
+    letter-spacing: 1.5px;
+    font-weight: var(--font_Regular);
+
+}
+
+.Menu_footer>.footer_items>ul>li>p {
+
+    font-family: var(--font-noto);
+    font-size: var(--font_parrafo_pc);
+    color: var(--color_background);
+    letter-spacing: 1.5px;
+    font-weight: var(--font_Regular);
+
+}
+
+.Menu_footer>.footer_items>ul>li>p {
+
+    font-family: var(--font-noto);
+    font-size: var(--font_parrafo_pc);
+    color: var(--color_background);
+    letter-spacing: 1.5px;
+    font-weight: var(--font_Regular);
+
+}
+
+.Menu_footer>.footer_items>ul>li>h2 {
+
+    font-family: var(--font-lato);
+    font-size: var(--font_h2_lato_pc);
+    color: var(--color_background);
+    letter-spacing: 1.5px;
+    font-weight: var(--font_Bold);
+
+}
+
+.Menu_footer>.footer_items>.submenu>p {
+    font-family: var(--font-noto);
+    font-size: var(--font_parrafo_pc);
+    color: var(--color_background);
+    letter-spacing: 1.5px;
+    font-weight: var(--font_Regular);
+}
+
+
+.footer_items>ul>ul.submenu>p {
+    font-family: var(--font-noto);
+    font-size: var(--font_parrafo_pc);
+    color: var(--color_background);
+    letter-spacing: 1.5px;
+    font-weight: var(--font_Regular);
+}
+
+
+.footer_items>ul>ul.submenu>li>p {
+    font-family: var(--font-noto);
+    font-size: var(--font_parrafo_pc);
+    color: var(--color_background);
+    letter-spacing: 1.5px;
+    font-weight: var(--font_Regular);
+}
+
+
+.row_copy {
+    font-family: var(--font-lato);
+    font-size: var(--font_h2_lato_pc);
+    color: var(--color_background);
+    letter-spacing: 1.5px;
+    font-weight: var(--font_Bold);
+    display: flex;
+
+}
+
+
+footer {
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    background: linear-gradient(170deg, var(--gradiend_sub), var(--gradient_main));
+}
+
+
+
+
 
 
 /*=============================================

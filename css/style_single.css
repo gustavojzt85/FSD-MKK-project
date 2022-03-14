@@ -442,9 +442,14 @@ Navbar
     letter-spacing: 1.5px;
     font-weight: var(--font_Bold);
     display: flex;
+    justify-content: center;
 
 }
 
+.copy {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
 footer {
     margin: auto;
@@ -456,9 +461,29 @@ footer {
     background: linear-gradient(170deg, var(--gradiend_sub), var(--gradient_main));
 }
 
+.Menu_footer {
+    width: 50%;
+    margin: auto;
+    position: relative;
+}
 
 
+.title-footer {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
+.logo_img>embed {
+
+    width: 5%;
+    margin-top: 20px;
+}
+
+.logo_img {
+    display: flex;
+    justify-content: center;
+}
 
 
 /*=============================================

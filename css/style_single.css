@@ -150,30 +150,31 @@ embed {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: var(--sub_overlay);
+    background-color: var(--color_filtro);
 }
 
 .text-title {
     margin-left: 23%;
     position: static;
-    margin-top: 20.99%;
+    margin-top: 25.99%;
 
 }
 
 .text-title>h2 {
-    color: var(--bg_white);
+    color: var(--color_background);
     font-family: var(--font-lato);
-    font-size: var(--font_h3);
-    font-weight: 500;
-    letter-spacing: 6px;
+    font-size: var(--font_h2_lato_pc);
+    font-weight: var(--font_Regular);
+    letter-spacing: 1.5px;
 
 }
 
 .text-title>h1 {
-    color: var(--bg_white);
+    color: var(--color_background);
     font-family: var(--font-noto);
-    font-size: var(--font_h2);
-    font-weight: 500;
+    font-size: var(--font_h1_sigle_pc);
+    font-weight: var(--font_Bold);
+    letter-spacing: 1.5px;
 
 
 }
@@ -191,7 +192,7 @@ embed {
 ===================================================*/
 
 .breadcumbs {
-    background-color: var(--sub_bg_Color);
+    background-color: var(--color_sub_background);
 }
 
 .prbreadcums {
@@ -199,14 +200,14 @@ embed {
     position: static;
     margin-top: 1%;
     margin-bottom: 1%;
-    font-family: var(--font-lato);
-    color: var(--main_Color);
+    font-family: var(--font-noto);
+    color: var(--color_main);
 
 }
 
 .prbreadcums>a {
-    font-family: var(--font-lato);
-    color: var(--sub_Color);
+    font-family: var(--font-noto);
+    color: var(--color_sub);
 }
 
 

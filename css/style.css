@@ -537,8 +537,8 @@ embed {
 /*area 1*/
 .background-Area1 {
     background-color: var(--color_sub_background);
-
-    height: 25%;
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 
 .engine {
@@ -547,16 +547,137 @@ embed {
 
 .engine embed {
     width: 20%;
+    margin-left: -70%;
+    margin-top: 36px;
 }
 
 .Area1 {
-    margin-top: 80px;
-    margin-bottom: 80px;
+
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    width: 58.33333333%;
+    width: 60%;
+    height: 450px;
+    padding-top: 90px;
+
 }
+
+.title_item {
+    position: absolute;
+    z-index: 5;
+    padding: 10%;
+    top: 0px;
+    padding-left: 15%;
+    padding-right: 1%;
+    padding-top: 150px;
+    padding-bottom: 80px;
+}
+
+.title_item>.title {
+    font-size: var(--font_h2_lato_pc);
+    font-family: var(--font-lato);
+    font-weight: var(--font_Bold);
+    color: var(--color_sub);
+    letter-spacing: 1.5px;
+    text-align: center;
+
+}
+
+.title_item>.sub_title {
+    font-size: var(--font_h2_pc_noto);
+    font-family: var(--font-noto);
+    color: var(--color_main);
+    letter-spacing: 1.5;
+    text-align: center;
+
+}
+
+
+
+.item_crop {
+    position: relative;
+    height: 380px;
+    width: auto;
+    margin-top: 190px;
+    transition: all 0.25s ease-in-out;
+    overflow: hidden;
+}
+
+
+.button_row {
+    z-index: 100;
+    position: absolute;
+    margin-top: -100px;
+    margin-left: 10.55%;
+    right: auto;
+    margin-bottom: auto;
+}
+
+.read_more {
+    font-family: var(--font-lato);
+    font-size: var(--font_h2_lato_pc);
+    font-weight: var(--font_Bold);
+    background-color: var(--color_background);
+    border-radius: 4px;
+    padding-top: 10px;
+    border-color: transparent;
+    letter-spacing: 1.5px;
+    padding-bottom: 10px;
+    padding-left: 9px;
+    padding-right: 11px;
+}
+
+
+
+
+.img_profile {
+    width: 380px;
+    height: 580px;
+    position: relative;
+    overflow: hidden;
+    margin: 1px;
+    overflow: hidden;
+
+}
+
+.text-caption {
+    width: 380px;
+    height: 700px;
+    position: absolute;
+    background: rgba(0, 100, 150, 0.3);
+    position: absolute;
+    left: 0;
+    top: 100%;
+    transition: all 1s ease-in-out;
+
+
+
+}
+
+.img_profile:hover .text-caption {
+    top: 0%;
+}
+
+.img_profile:hover .item_crop {
+    margin-block-start: -120px;
+    height: 700px;
+    max-width: auto;
+
+
+}
+
+.item_crop:hover .title_item {
+    color: white;
+}
+
+.text-caption {
+    text-align: center;
+    line-height: 40px;
+    padding-top: 40%;
+
+}
+
+
 
 
 /*area 2*/

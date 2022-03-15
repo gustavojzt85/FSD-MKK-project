@@ -796,6 +796,8 @@ embed {
     color: var(--color_sub);
     letter-spacing: 1.5px;
     font-weight: var(--font_Bold);
+    padding-right: 150px;
+    line-height: 1.6;
 
 }
 
@@ -803,8 +805,9 @@ embed {
     font-family: var(--font-noto);
     font-size: var(--font_h2_pc_noto);
     color: var(--color_main);
-    letter-spacing: 1.5px;
+    letter-spacing: 2px;
     font-weight: var(--font_Bold);
+    line-height: 1.5;
 }
 
 .Area_text_3 {
@@ -817,13 +820,20 @@ embed {
 }
 
 
-
 .text_dog_area3 {
     font-family: var(--font-noto);
-    font-size: var(--font_h2_pc_noto);
+    font-size: var(--font_parrafo_pc);
     color: var(--color_background);
     letter-spacing: 1.5px;
     font-weight: var(--font_Regular);
+    position: absolute;
+    z-index: 50;
+    margin-top: -230px;
+    margin-left: 70px;
+    width: 150px;
+    padding-left: 10px;
+    padding-bottom: 15px;
+
 
 }
 
@@ -849,6 +859,74 @@ embed {
     margin-top: 300px;
 
 }
+
+
+.Area3_img.col-lg-6 {
+    float: inline-end;
+}
+
+
+.dog_area3 {
+    z-index: 50;
+    position: absolute;
+    size: auto;
+    width: 250px !important;
+    height: 250px !important;
+    display: flex;
+    margin-top: -14%;
+    margin-left: 60px;
+}
+
+.area_img_back {
+    filter: brightness(.47);
+}
+
+.Area3_text_area.col-lg-3 {
+    background-color: var(--color_background);
+    padding-left: 80px;
+    padding-bottom: 30px;
+    padding-right: 80px;
+    padding-top: 30px;
+    line-height: 40px;
+    margin-left: 16%;
+
+
+}
+
+.button_row_3 {
+
+    display: flex;
+    margin-top: 20px;
+}
+
+
+
+.read_more_area3 {
+    padding: 9.5px;
+    background-color: var(--color_main);
+    border-color: transparent;
+    border-radius: 6px;
+    color: var(--color_background);
+    font-size: var(--font_h2_lato_pc);
+    font-family: var(--font-lato);
+    display: flex;
+}
+
+
+.row_icon {
+    background-color: var(--color_background);
+    border-radius: 100%;
+    width: 19px;
+    height: 19px;
+    padding: 0px;
+    padding: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    display: block;
+
+}
+
+
 
 
 /*instagram*/

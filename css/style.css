@@ -968,6 +968,7 @@ embed {
 
 .Instagram_feed {
     background-color: var(--color_sub_background);
+    padding: 100px;
 }
 
 .arco {
@@ -1053,6 +1054,7 @@ embed {
     color: var(--color_background);
     letter-spacing: 1.5px;
     font-weight: var(--font_Bold);
+    text-align: center;
 
 }
 
@@ -1062,21 +1064,24 @@ embed {
     color: var(--color_background);
     letter-spacing: 1.5px;
     font-weight: var(--font_Bold);
+    text-align: center;
 
 
 }
 
-.container_contact>h4 {
+.container_contact>.text_contact>h4 {
 
     font-family: var(--font-noto);
     font-size: var(--font_h4_pc);
     color: var(--color_background);
     letter-spacing: 1.5px;
     font-weight: var(--font_Regular);
+    text-align: center;
+
 
 }
 
-.Phone>ul>li>h2 {
+.Phone_contact>ul>li>h2 {
     font-family: var(--font-lato);
     font-size: var(--font_h2_lato_pc);
     color: var(--color_background);
@@ -1086,7 +1091,7 @@ embed {
 
 }
 
-.Phone>ul>li>h5 {
+.Phone_contact>ul>li>h5 {
     font-family: var(--font-noto);
     font-size: var(--font_h5_pc);
     color: var(--color_background);
@@ -1111,12 +1116,44 @@ embed {
 
 }
 
+.contact:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--color_filtro);
+}
 
 .contact {
     width: 100%;
     margin: auto;
     display: flex;
     height: auto;
+}
+
+
+.information_contact {
+    z-index: 50;
+    width: 50%;
+    margin: auto;
+}
+
+.text_contact {
+
+    width: 55%;
+    margin: auto;
+    display: flex;
+
+}
+
+
+.buttons_contact {
+    display: flex;
+    width: 50%;
+    margin: auto;
+
 }
 
 /*footer*/
@@ -1138,6 +1175,7 @@ embed {
     color: var(--color_background);
     letter-spacing: 1.5px;
     font-weight: var(--font_Regular);
+    text-align: center;
 
 }
 
@@ -1148,6 +1186,7 @@ embed {
     color: var(--color_background);
     letter-spacing: 1.5px;
     font-weight: var(--font_Regular);
+    text-align: center;
 
 }
 

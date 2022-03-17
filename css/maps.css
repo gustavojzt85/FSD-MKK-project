@@ -48,7 +48,7 @@
     --font_h5_mb: 15px;
     --font_parrafo_pc: 15px;
     --font_parrafo_mb: 13px;
-    --font_parrafo_lead_pc:17px;
+    --font_parrafo_lead_pc: 17px;
     --font_navigation_nav_time_pc: 12px;
     --font_navigation_nav_time_mb: 8px;
     --font_Regular: 400;
@@ -102,6 +102,8 @@ body {
     width: 92%;
     height: auto;
 }
+
+
 
 .row {
     position: relative;

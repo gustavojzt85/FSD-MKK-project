@@ -1055,6 +1055,7 @@ embed {
     letter-spacing: 1.5px;
     font-weight: var(--font_Bold);
     text-align: center;
+    margin-bottom: 12px;
 
 }
 
@@ -1065,6 +1066,7 @@ embed {
     letter-spacing: 1.5px;
     font-weight: var(--font_Bold);
     text-align: center;
+    margin-bottom: 12px;
 
 
 }
@@ -1077,6 +1079,8 @@ embed {
     letter-spacing: 1.5px;
     font-weight: var(--font_Regular);
     text-align: center;
+    margin-bottom: 12px;
+    margin-top: 12px;
 
 
 }
@@ -1087,6 +1091,7 @@ embed {
     color: var(--color_background);
     letter-spacing: 1.5px;
     font-weight: var(--font_Medium);
+    margin-left: 17px;
 
 
 }
@@ -1138,6 +1143,8 @@ embed {
     z-index: 50;
     width: 50%;
     margin: auto;
+    padding-top: 50px;
+    padding-bottom: 90px;
 }
 
 .text_contact {
@@ -1151,13 +1158,45 @@ embed {
 
 .buttons_contact {
     display: flex;
-    width: 50%;
+    width: 64%;
     margin: auto;
+    margin-top: 100px;
+
 
 }
 
-/*footer*/
+.button_mail.col-lg-6>.button_mail_button {
+    background: linear-gradient(220deg, var(--gradiend_sub), var(--gradient_main));
+    color: var(--color_background);
+    font-size: var(--font_parrafo_pc);
+    font-family: var(--font-noto);
+    padding: 8px;
+    border-color: transparent;
+    display: flex;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    border-radius: 7px;
+}
 
+.button_mail_button embed {
+    width: 28px;
+    padding-right: 4px;
+
+
+}
+
+.line {
+    margin-top: 85px;
+    border: 0;
+    height: .2rem;
+    background-image: linear-gradient(260deg, #fff, #fff, var(--gradient_main), var(--gradient_main), var(--gradient_main));
+
+}
+
+
+/*footer*/
 .title-footer {
 
     font-family: var(--font-noto);
@@ -1175,7 +1214,6 @@ embed {
     color: var(--color_background);
     letter-spacing: 1.5px;
     font-weight: var(--font_Regular);
-    text-align: center;
 
 }
 
@@ -1186,7 +1224,6 @@ embed {
     color: var(--color_background);
     letter-spacing: 1.5px;
     font-weight: var(--font_Regular);
-    text-align: center;
 
 }
 
@@ -1238,6 +1275,10 @@ embed {
 
 }
 
+.copy {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
 footer {
     margin: auto;

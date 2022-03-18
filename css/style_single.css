@@ -233,35 +233,40 @@ embed {
 
 .main {
     background-color: var(--bg_white);
-    z-index: 99;
+    /*z-index: 99;
     position: absolute;
     margin-top: -8%;
     margin-left: 20%;
     width: 1200px;
     padding: 5%;
-    margin-right: 20%;
+    margin-right: 20%;*/
 }
 
 .main>.title_banner_main {
-    color: var(--sub_Color);
-    font-size: var(--font_h3);
-    letter-spacing: 6px;
+    color: var(--color_sub);
+    font-size: var(--font_h2_lato_pc);
+    letter-spacing: 1.5px;
     font-family: var(--font-lato);
+    font-weight: var(--font_Bold);
 }
 
 .main>.title_banner_ {
-    color: var(--main_Color);
-    font-size: var(--font_h2);
+    color: var(--color_main);
+    font-size: var(--font_h2_pc_noto);
     font-family: var(--font-noto);
     padding-bottom: 6%;
     padding-top: 1.5%;
+    letter-spacing: 1.5px;
+    font-weight: var(--font_Bold);
 }
 
 
 .main>p {
-    font-size: var(--font_p);
-    color: var(--plane_Color);
-    line-height: 55px;
+    font-size: var(--font_parrafo_p);
+    color: var(--color_plane);
+    letter-spacing: 1.5px;
+    font-family: var(--font-noto);
+    font-weight: var(--font_Regular);
 }
 
 /*===========================================
@@ -355,6 +360,179 @@ Navbar
 
 
 }
+
+/*===================================
+Message
+====================================*/
+.photo_message>p {
+    font-family: var(--font-noto);
+    font-size: var(--font_parrafo_pc);
+    color: var(--color_main);
+    font-weight: var(--font_Bold);
+    letter-spacing: 1.5px;
+}
+
+.photo_message>h3 {
+    font-family: var(--font-noto);
+    font-size: var(--font_h3_pc);
+    color: var(--color_main);
+    font-weight: var(--font_Medium);
+    letter-spacing: 1.5px;
+}
+
+
+.text_message>.title_message {
+    font-family: var(--font-lato);
+    font-size: var(--font_h2_lato_pc);
+    color: var(--color_sub);
+    font-weight: var(--font_Bold);
+    letter-spacing: 1.5px;
+}
+
+.text_message>.sub_title_message {
+    font-family: var(--font-noto);
+    font-size: var(--font_h2_pc_noto);
+    color: var(--color_main);
+    font-weight: var(--font_Bold);
+    letter-spacing: 1.5px;
+}
+
+.message_info>p {
+    font-family: var(--font-noto);
+    font-size: var(--font_parrafo_pc);
+    color: var(--color_plane);
+    font-weight: var(--font_Medium);
+    letter-spacing: 1.5px;
+}
+
+.Phylosop-background>.title_Phylosop_ {
+
+    font-family: var(--font-noto);
+    font-size: var(--font_h2_pc_noto);
+    color: var(--color_background);
+    font-weight: var(--font_Bold);
+    letter-spacing: 1.5px;
+
+}
+
+.Phylosop-background>p {
+    font-family: var(--font-noto);
+    font-size: var(--font_h2_pc_noto);
+    color: var(--color_background);
+    font-weight: var(--font_Bold);
+    letter-spacing: 1.5px;
+}
+
+.main_Phylosop>h3 {
+    font-family: var(--font-noto);
+    font-size: var(--font_h3_pc);
+    color: var(--color_button);
+    font-weight: var(--font_Bold);
+    letter-spacing: 1.5px;
+
+}
+
+.main_Phylosop>p {
+
+    font-family: var(--font-noto);
+    font-size: var(--font_parrafo_pc);
+    color: var(--color_plane);
+    font-weight: var(--font_Medium);
+    letter-spacing: 1.5px;
+
+}
+
+/*----company profile--*/
+
+
+.row_company_profile>.title_company_main {
+    font-family: var(--font-lato);
+    font-size: var(--font_parrafo_pc);
+    color: var(--color_sub);
+    font-weight: var(--font_Bold);
+    letter-spacing: 1.5px;
+}
+
+
+.row_company_profile>.title_company_ {
+    font-family: var(--font-noto);
+    font-size: var(--font_h2_pc_noto);
+    color: var(--color_main);
+    font-weight: var(--font_Bold);
+    letter-spacing: 1.5px;
+}
+
+.info_profile>ul>li>p {
+    font-family: var(--font-noto);
+    font-size: var(--font_parrafo_pc);
+    color: var(--color_plane);
+    font-weight: var(--font_Bold);
+    letter-spacing: 1.5px;
+}
+
+.maps_title {
+    font-family: var(--font-noto);
+    font-size: var(--font_parrafo_pc);
+    color: var(--color_plane);
+    font-weight: var(--font_Bold);
+    letter-spacing: 1.5px;
+}
+
+.info_data>ul>li>p {
+    font-family: var(--font-noto);
+    font-size: var(--font_parrafo_pc);
+    color: var(--color_plane);
+    font-weight: var(--font_Regular);
+    letter-spacing: 1.5px;
+
+}
+
+.col_map>p {
+    font-family: var(--font-noto);
+    font-size: var(--font_parrafo_pc);
+    color: var(--color_plane);
+    font-weight: var(--font_Regular);
+    letter-spacing: 1.5px;
+}
+
+/*----history--------*/
+.title_history_main {
+    font-family: var(--font-lato);
+    font-size: var(--font_parrafo_pc);
+    color: var(--color_sub);
+    font-weight: var(--font_Bold);
+    letter-spacing: 1.5px;
+}
+
+
+.title_history_ {
+    font-family: var(--font-noto);
+    font-size: var(--font_h2_pc_noto);
+    color: var(--color_main);
+    font-weight: var(--font_Bold);
+    letter-spacing: 1.5px;
+}
+
+
+
+.info_history>ul>li>p {
+    font-family: var(--font-noto);
+    font-size: var(--font_parrafo_pc);
+    color: var(--color_plane);
+    font-weight: var(--font_Bold);
+    letter-spacing: 1.5px;
+}
+
+
+.info_history_data>ul>li>p {
+    font-family: var(--font-noto);
+    font-size: var(--font_parrafo_pc);
+    color: var(--color_plane);
+    font-weight: var(--font_Regular);
+    letter-spacing: 1.5px;
+
+}
+
 
 /**-----footer*/
 
@@ -487,8 +665,8 @@ footer {
     width: 6px;
     height: 6px;
     z-index: 274;
-	margin-left: -10px;
-   margin-top: 7px;
+    margin-left: -10px;
+    margin-top: 7px;
 }
 
 

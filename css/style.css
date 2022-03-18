@@ -259,7 +259,6 @@ embed {
 .header-area .academy-main-menu {
     position: absolute;
     width: 100%;
-
     background-color: transparent;
     top: 82%;
     z-index: 1000;
@@ -366,7 +365,6 @@ embed {
 .content-lead-parragraf {
     position: relative;
     margin: auto;
-    width: 37%;
     padding-block-end: 50px;
 
 }
@@ -384,12 +382,13 @@ embed {
 
 /*news*/
 .news {
+    width: 70%;
     margin-top: 80px;
     margin-bottom: 80px;
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    width: 58.33333333%;
+
 }
 
 .news-list>ul>li {
@@ -838,8 +837,9 @@ embed {
 }
 
 .Area3_img>img {
-    width: 70%;
+    width: 100%;
     height: auto;
+    padding-right: 80px;
 }
 
 .background-Area3 {
@@ -867,13 +867,13 @@ embed {
 
 
 .dog_area3 {
+    margin-top: -14%;
     z-index: 50;
     position: absolute;
     size: auto;
     width: 250px !important;
     height: 250px !important;
     display: flex;
-    margin-top: -14%;
     margin-left: 60px;
 }
 
@@ -881,7 +881,7 @@ embed {
     filter: brightness(.47);
 }
 
-.Area3_text_area.col-lg-3 {
+.Area3_text_area.col-lg-4 {
     background-color: var(--color_background);
     padding-left: 80px;
     padding-bottom: 30px;
@@ -1013,7 +1013,6 @@ embed {
 }
 
 .buttons_inst {
-    width: 15.55%;
     margin: auto;
     position: relative;
     height: auto;
@@ -1158,11 +1157,8 @@ embed {
 
 .buttons_contact {
     display: flex;
-    width: 64%;
     margin: auto;
     margin-top: 100px;
-
-
 }
 
 .button_mail.col-lg-6>.button_mail_button {
@@ -1456,24 +1452,116 @@ PANTALLA DE ESCRITORIO MEDIANO - MEDIUM (md) - revisamos en tablet horizontal 10
         padding-right: 10px;
     }
 
-
-
     .carousel_description {
+        margin-bottom: 6.6%;
+        margin-top: -12%;
+    }
 
-        margin-bottom: 4.6%;
-        margin-top: -18.6%;
+
+
+    .header-area .academy-main-menu {
+        top: 63%;
 
     }
+
+    .content-menu {
+        width: 83%;
+    }
+
+    .lead-text {
+        font-size: 83px;
+    }
+
+    .content-lead-parragraf {
+        width: 60%;
+    }
+
+    .news {
+        width: 79%;
+
+    }
+
+    .Area2_text_area.col-lg-4 {
+        line-height: 30px;
+    }
+
+    .dog_area3 {
+        margin-top: -21%;
+    }
+
+    .Area3_text_area.col-lg-4 {
+         margin-left: 9%;
+    }
+
 
 }
 
 /* XX-Large devices (larger desktops, 1400px and up)*/
 @media only screen and (min-width: 1400px) {
     .carousel_description {
-
-        margin-bottom: 4.6%;
-        margin-top: -14.6%;
+        margin-bottom: 2.6%;
+        margin-top: -12%;
     }
+
+
+    .header-area .academy-main-menu .classy-navbar {
+
+        height: auto;
+        padding: 0;
+    }
+
+
+    .content-menu {
+        width: 74%;
+    }
+
+
+    .header-area .academy-main-menu {
+
+        top: 65%;
+    }
+
+    .lead-text {
+        font-size: 95px;
+    }
+
+    .content-lead-parragraf {
+        width: 50%;
+
+    }
+
+    .news {
+        width: 70%;
+    }
+
+
+    .Area3 {
+        margin-top: 350px;
+    }
+
+    .Area3_text_area.col-lg-4 {
+        margin-left: 9%;
+
+
+    }
+
+    .dog_area3 {
+        margin-top: -19%;
+
+    }
+
+    .buttons_inst {
+        width: 30%;
+    }
+
+
+    .buttons_contact {
+        width: 100%;
+
+    }
+
+
+
 }
 
 
@@ -1486,4 +1574,58 @@ PANTALLA DE ESCRITORIO MEDIANO - MEDIUM (md) - revisamos en tablet horizontal 10
         margin-bottom: 3%;
         margin-top: -10.6%;
     }
+
+
+    .header-area .academy-main-menu {
+        position: absolute;
+        width: 100%;
+        background-color: transparent;
+        top: 82%;
+        z-index: 1000;
+        left: 0;
+        right: 0;
+    }
+
+    .content-menu {
+
+        position: relative;
+        margin: auto;
+        width: 58.33333333%;
+    }
+
+
+    .lead-text {
+        font-size: 120px;
+
+    }
+
+
+    .content-lead-parragra {
+        width: 37%;
+    }
+
+
+    .news {
+
+        width: 58.33333333%;
+    }
+
+    .dog_area3 {
+        margin-top: -14%;
+
+    }
+
+
+    .buttons_inst {
+        width: 15.55%;
+    }
+
+
+    .buttons_contact {
+
+        width: 64%;
+
+    }
+
+
 }

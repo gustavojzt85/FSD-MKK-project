@@ -405,6 +405,30 @@ Message
     letter-spacing: 1.5px;
 }
 
+
+
+
+.Phylosop-background>.title_Phylosop_ {
+
+    font-family: var(--font-noto);
+    font-size: var(--font_h2_noto_pc);
+    color: var(--color_background);
+    font-weight: var(--font_Bold);
+    letter-spacing: 1.5px;
+
+}
+
+
+.Phylosop-background>.title_Phylosop_main {
+
+    font-family: var(--font-lato);
+    font-size: var(--font_h2_lato_pc);
+    color: var(--color_background);
+    font-weight: var(--font_Bold);
+    letter-spacing: 1.5px;
+
+}
+
 .Phylosop-background>.title_Phylosop_ {
 
     font-family: var(--font-noto);
@@ -451,6 +475,7 @@ Message
     color: var(--color_sub);
     font-weight: var(--font_Bold);
     letter-spacing: 1.5px;
+    padding-top: 12px;
 }
 
 
@@ -460,7 +485,9 @@ Message
     color: var(--color_main);
     font-weight: var(--font_Bold);
     letter-spacing: 1.5px;
+    padding: 6px;
 }
+
 
 .info_profile>ul>li>p {
     font-family: var(--font-noto);
@@ -483,7 +510,7 @@ Message
     font-size: var(--font_parrafo_pc);
     color: var(--color_plane);
     font-weight: var(--font_Regular);
-    letter-spacing: 1.5px;
+
 
 }
 
@@ -530,6 +557,153 @@ Message
     color: var(--color_plane);
     font-weight: var(--font_Regular);
     letter-spacing: 1.5px;
+
+}
+
+/*========contact======================*/
+.container_contact>.title_contact {
+    font-family: var(--font-lato);
+    font-size: var(--font_h2_lato_pc);
+    color: var(--color_background);
+    letter-spacing: 1.5px;
+    font-weight: var(--font_Bold);
+    text-align: center;
+    margin-bottom: 12px;
+
+}
+
+.container_contact>.titlesub_contact {
+    font-family: var(--font-noto);
+    font-size: var(--font_h2_pc_noto);
+    color: var(--color_background);
+    letter-spacing: 1.5px;
+    font-weight: var(--font_Bold);
+    text-align: center;
+    margin-bottom: 12px;
+
+
+}
+
+.container_contact>.text_contact>h4 {
+
+    font-family: var(--font-noto);
+    font-size: var(--font_h4_pc);
+    color: var(--color_background);
+    letter-spacing: 1.5px;
+    font-weight: var(--font_Regular);
+    text-align: center;
+    margin-bottom: 12px;
+    margin-top: 12px;
+
+
+}
+
+.Phone_contact>ul>li>h2 {
+    font-family: var(--font-lato);
+    font-size: var(--font_h2_lato_pc);
+    color: var(--color_background);
+    letter-spacing: 1.5px;
+    font-weight: var(--font_Medium);
+    margin-left: 17px;
+
+
+}
+
+.Phone_contact>ul>li>h5 {
+    font-family: var(--font-noto);
+    font-size: var(--font_h5_pc);
+    color: var(--color_background);
+    letter-spacing: 1.5px;
+    font-weight: var(--font_Regular);
+
+
+
+}
+
+
+
+.contact {
+
+    background-image: url("../assets/img/contact/contact.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50% 31%;
+    top: 100%;
+    transition: top 0.5s;
+    height: 400px;
+    position: relative;
+
+}
+
+.contact:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--color_filtro);
+}
+
+.contact {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    height: auto;
+}
+
+
+.information_contact {
+    z-index: 50;
+    width: 50%;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 90px;
+}
+
+.text_contact {
+
+    width: 55%;
+    margin: auto;
+    display: flex;
+
+}
+
+
+.buttons_contact {
+    display: flex;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.button_mail.col-lg-6>.button_mail_button {
+    background: linear-gradient(220deg, var(--gradiend_sub), var(--gradient_main));
+    color: var(--color_background);
+    font-size: var(--font_parrafo_pc);
+    font-family: var(--font-noto);
+    padding: 8px;
+    border-color: transparent;
+    display: flex;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    border-radius: 7px;
+}
+
+.button_mail_button embed {
+    width: 28px;
+    padding-right: 4px;
+
+
+}
+
+.line {
+    margin-top: 85px;
+    border: 0;
+    height: .2rem;
+    background-image: linear-gradient(260deg, #fff, #fff, var(--gradient_main), var(--gradient_main), var(--gradient_main));
 
 }
 
@@ -694,36 +868,18 @@ SCREEN DESKTOP LARGE - LARGE (lg)
 PANTALLA DE ESCRITORIO MEDIANO - MEDIUM (md) - revisamos en tablet horizontal 1024px
 =============================================*/
 
-@media(max-width:1199px) and (min-width:992px) {
-
-
-    /*CABEZOTE*/
-
-
-
-}
+@media(max-width:1199px) and (min-width:992px) {}
 
 /*=============================================
 4.-RESPONSIVE  PANTALLA DE TABLET
 PANTALLA DE TABLET - SMALL (sm) - revisamos en tablet vertical 768px
 =============================================*/
 
-@media(max-width:991px) and (min-width:768px) {}
-
-/*=============================================
-5.-RESPONSIVE PANTALLA DE PHONES
-PANTALLA DE PHONES - EXTRA SMALL (xs) - revisamos en movil horizontal 480px o vertical 320px
-=============================================*/
-
-@media(max-width:767px) {
-
+@media(max-width:991px) and (min-width:768px) {
     .logo_container {
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-        margin-bottom: 10px;
-        margin-left: 15%;
-        margin-right: 15%;
+        margin-top: 30px;
+        display: block ruby;
+        margin-left: 0px;
     }
 
     .nav_container {
@@ -737,20 +893,16 @@ PANTALLA DE PHONES - EXTRA SMALL (xs) - revisamos en movil horizontal 480px o ve
 
     .logo-img {
         max-width: 100%;
-        height: auto;
-        margin-left: auto;
-        margin-right: auto;
+
 
 
     }
 
 
     .nav_navigation {
-        color: var(--main_Color);
-        display: flex;
-        justify-content: center;
-        margin-left: 50px;
-        margin-right: 50px;
+
+        margin: auto;
+
     }
 
 
@@ -760,7 +912,11 @@ PANTALLA DE PHONES - EXTRA SMALL (xs) - revisamos en movil horizontal 480px o ve
         margin: 0px;
     }
 
-
+    .nav_navigation {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
 
     /*=================================================
 2 . - Banner responsive
@@ -776,15 +932,18 @@ PANTALLA DE PHONES - EXTRA SMALL (xs) - revisamos en movil horizontal 480px o ve
         transition: top 0.5s;
         height: 200px;
         position: relative;
+        width: auto;
     }
 
     .text-title>h1 {
 
-        font-size: var(--font_h3);
+        font-size: var(--font_h1_sigle_mb);
     }
 
     .text-title>h2 {
-        font-size: var(--font_p2);
+
+        font-size: var(--font_h2_lato_mb);
+
 
     }
 
@@ -814,40 +973,845 @@ PANTALLA DE PHONES - EXTRA SMALL (xs) - revisamos en movil horizontal 480px o ve
     /*=================================================
 4 . - eyecatch  responsive
 ===================================================*/
-    .eyecatch-article {
-        margin-left: 20px;
-        margin-right: 20px;
+    .banner-background {
+
+        height: 350px;
+        width: auto;
+        margin-left: 0;
+        margin-right: auto;
+
     }
 
-    .banner-background {
-        height: 200px;
+
+    .content_eyecatch {
         width: auto;
+        margin: auto;
+        margin-top: 60px;
+        margin-left: auto;
+        margin-right: auto;
         position: relative;
 
     }
 
     .main {
-        margin-top: -40%;
         width: auto;
-        padding: 5%;
-        margin-right: 0px;
-        margin-left: 0px;
+        z-index: 50;
+        position: absolute;
+        background-color: var(--color_background);
+        margin-top: -200px;
+        padding: 10px;
     }
 
     .main>.title_banner_main {
-        font-size: var(--font_p3);
-        letter-spacing: 2px;
-
-
+        font-size: var(--font_h2_lato_mb);
     }
 
     .main>.title_banner_ {
-        font-size: var(--font_h3);
+        font-size: var(--font_h2_mb_noto);
     }
 
     .main>p {
-        font-size: var(--font_p3);
-        line-height: 33px;
+        font-size: var(--font_parrafo_mb);
+        padding: 3%;
+    }
+
+
+    /*==============================
+
+message
+*/
+
+    .messege {
+        margin-top: 30%;
+        background-color: var(--color_sub_background);
+
+    }
+
+    .photo_message>p {
+        font-size: var(--font_parrafo_mb);
+        margin-top: 90%;
+        text-align: center;
+    }
+
+
+    .pic_message {
+        z-index: 50;
+        position: absolute;
+        padding: 20%;
+    }
+
+    .photo_message>h3 {
+        font-size: var(--font_h3_mb);
+        text-align: center;
+    }
+
+    .text_message>.title_message {
+        font-size: var(--font_h2_lato_mb);
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .text_message>.sub_title_message {
+        font-size: var(--font_h2_mb_noto);
+        text-align: center;
+        margin-top: 20px;
+    }
+
+
+    .text_message>p {
+        font-size: var(--font_parrafo_mb);
+
+    }
+
+
+    .message_info {
+        padding: 5%;
+    }
+
+    /*=========Phylosofpia=====================*/
+
+    .Phylosop {
+        background-color: var(--color_sub_background);
+        width: 95%;
+        margin-left: auto;
+        position: relative;
+        margin-right: auto;
+        margin-top: 60px;
+
+    }
+
+    .Phylosop-background {
+
+        background-image: url("../assets/img/singlepage/background.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 77% 50%;
+        top: 100%;
+        height: 200px;
+        position: relative;
+        width: auto;
+    }
+
+
+    .Phylosop-background::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: var(--color_filtro);
+    }
+
+
+    .Phylosop-background>.title_Phylosop_main {
+        font-size: var(--font_parrafo_mb);
+        text-align: center;
+        padding-top: 27px;
+        z-index: 50;
+        position: relative;
+
+
+    }
+
+    .Phylosop-background>.title_Phylosop_ {
+        font-size: var(--font_h2_mb_noto);
+        text-align: center;
+        padding-top: 20px;
+        z-index: 50;
+        position: relative;
+
+    }
+
+
+    .main_Phylosop>h3 {
+        font-size: var(--font_h3_mb);
+        text-align: left;
+        padding: 2%;
+    }
+
+    .main_Phylosop>p {
+        font-size: var(--font_parrafo_mb);
+        padding-bottom: 5%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    /*====company profile=====*/
+
+    .company_profile {
+
+        margin-top: 60px;
+        background-color: var(--color_sub_background);
+        padding-bottom: 35px;
+
+    }
+
+
+    .info_profile.col-lg-6.col-xs-3 {
+        background-color: #f1fafe;
+
+    }
+
+    .info_profile>ul>li>p {
+        font-size: var(--font_parrafo_mb);
+        padding-top: 14.5px;
+        border-bottom-color: var(--color_sub);
+        border-style: dashed;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        border-width: 0.5px;
+        padding: 9px;
+    }
+
+    .title_company_main {
+        text-align: center;
+    }
+
+    .title_company_ {
+        text-align: center;
+    }
+
+    .info_data>ul>li>p {
+        font-size: var(--font_parrafo_mb);
+        padding: 9px;
+        border-bottom-color: var(--color_sub);
+        border-style: dashed;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        border-width: 0.5px;
+    }
+
+
+
+    .maps_title {
+        margin-bottom: 5px;
+        font-size: var(--font_parrafo_mb);
+
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    .col_map {
+        font-size: var(--font_parrafo_mb);
+    }
+
+    /*====Company  history =====*/
+
+    .company_history {
+        margin-top: 60px;
+        margin-bottom: 360px;
+    }
+
+    .row_company_history>.title_history_main {
+        text-align: center;
+        padding-bottom: 5px;
+    }
+
+    .row_company_history>.title_history_ {
+        text-align: center;
+        padding-bottom: 5px;
+    }
+
+    .info_history {
+        background-color: #f1fafe;
+        font-size: var(--font_parrafo_mb);
+
+    }
+
+
+    .info_history>ul>li>p {
+        font-size: var(--font_parrafo_mb);
+        padding-top: 14.5px;
+        border-bottom-color: var(--color_sub);
+        border-style: dashed;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        border-width: 0.5px;
+        padding: 9px;
+
+    }
+
+    .info_history_data>ul>li>p {
+        font-size: var(--font_parrafo_mb);
+        font-size: var(--font_parrafo_mb);
+        padding-top: 14.5px;
+        border-bottom-color: var(--color_sub);
+        border-style: dashed;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        border-width: 0.5px;
+        padding: 9px;
+    }
+
+    /*=========contact=====================*/
+
+    .contact {
+        margin-top: 20%;
+
+    }
+
+    .text_contact {
+        width: 100%;
+    }
+
+    .container_contact>.titlesub_contact {
+        font-size: var(--font_h2_mb_noto);
+        margin-bottom: 6px;
+    }
+
+    .buttons_contact {
+        display: flow-root list-item;
+        margin-top: 25px;
+        margin-left: 25%;
+        margin-right: 20%;
+    }
+
+    .container_contact>.text_contact>h4 {
+        font-size: var(--font_h4_mb);
+    }
+
+    .button_mail.col-lg-6>.button_mail_button {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 7px;
+        padding-bottom: 11px;
+
+    }
+
+    .Phone_contact>ul>li>h5 {
+
+        font-size: var(--font_h5_mb);
+        text-align: center;
+
+    }
+
+    .Phone_contact>ul>li>h2 {
+        font-size: var(--font_h2_lato_mb);
+        margin-left: 0px;
+        text-align: center;
+        margin-top: 2px;
+    }
+
+    .information_contact {
+
+        width: 80%;
+
+    }
+
+    /*=============Footer==========================*/
+
+    .logo_img>embed {
+        width: 25%;
+
+    }
+
+    .Menu_footer {
+        width: 90%;
+    }
+
+    .footer_items>h2 {
+        font-size: var(--font_h2_mb_noto);
+
+    }
+
+    .footer_items>p {
+        font-size: var(--font_parrafo_mb);
+
+    }
+
+    .submenu_1>li>.viñeta>p {
+        font-size: var(--font_parrafo_mb);
+    }
+
+    .submenu>li>p {
+        font-size: var(--font_parrafo_mb);
+    }
+
+
+
+
+
+}
+
+/*=============================================
+5.-RESPONSIVE PANTALLA DE PHONES
+PANTALLA DE PHONES - EXTRA SMALL (xs) - revisamos en movil horizontal 480px o vertical 320px
+=============================================*/
+
+@media(max-width:767px) {
+
+    .logo_container {
+        margin-top: 30px;
+        display: block ruby;
+        margin-left: 0px;
+    }
+
+    .nav_container {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        margin: 0px 0px 30px 0px;
+
+
+    }
+
+    .logo-img {
+        max-width: 100%;
+
+
+
+    }
+
+
+    .nav_navigation {
+
+        margin: auto;
+
+    }
+
+
+    .nav_time {
+        display: flex;
+        justify-content: center;
+        margin: 0px;
+    }
+
+    .nav_navigation {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    /*=================================================
+2 . - Banner responsive
+===================================================*/
+
+    .banner {
+        background-image: url("../assets/img/Singlepage/banner.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: 77% 50%;
+        top: 100%;
+        transition: top 0.5s;
+        height: 200px;
+        position: relative;
+        width: auto;
+    }
+
+    .text-title>h1 {
+
+        font-size: var(--font_h1_sigle_mb);
+    }
+
+    .text-title>h2 {
+
+        font-size: var(--font_h2_lato_mb);
+
+
+    }
+
+    .text-title {
+        margin-left: 3%;
+
+        margin-top: 18%;
+    }
+
+    .text-title>.linea {
+        width: 250px;
+    }
+
+    /*=================================================
+3 . - Breadcumbs responsive
+===================================================*/
+
+    .prbreadcums {
+        margin-left: 2.55%;
+        position: static;
+        margin-top: 3%;
+        margin-bottom: 3%;
+        font-family: var(--font-lato);
+        color: var(--main_Color);
+    }
+
+    /*=================================================
+4 . - eyecatch  responsive
+===================================================*/
+    .banner-background {
+
+        height: 350px;
+        width: auto;
+        margin-left: 0;
+        margin-right: auto;
+
+    }
+
+
+    .content_eyecatch {
+        width: auto;
+        margin: auto;
+        margin-top: 60px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+
+    }
+
+    .main {
+        width: auto;
+        z-index: 50;
+        position: absolute;
+        background-color: var(--color_background);
+        margin-top: -200px;
+        padding: 10px;
+    }
+
+    .main>.title_banner_main {
+        font-size: var(--font_h2_lato_mb);
+    }
+
+    .main>.title_banner_ {
+        font-size: var(--font_h2_mb_noto);
+    }
+
+    .main>p {
+        font-size: var(--font_parrafo_mb);
+        padding: 3%;
+    }
+
+
+    /*==============================
+
+message
+*/
+
+    .messege {
+        margin-top: 30%;
+        background-color: var(--color_sub_background);
+
+    }
+
+    .photo_message>p {
+        font-size: var(--font_parrafo_mb);
+        margin-top: 90%;
+        text-align: center;
+    }
+
+
+    .pic_message {
+        z-index: 50;
+        position: absolute;
+        padding: 20%;
+    }
+
+    .photo_message>h3 {
+        font-size: var(--font_h3_mb);
+        text-align: center;
+    }
+
+    .text_message>.title_message {
+        font-size: var(--font_h2_lato_mb);
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .text_message>.sub_title_message {
+        font-size: var(--font_h2_mb_noto);
+        text-align: center;
+        margin-top: 20px;
+    }
+
+
+    .text_message>p {
+        font-size: var(--font_parrafo_mb);
+
+    }
+
+
+    .message_info {
+        padding: 5%;
+    }
+
+    /*=========Phylosofpia=====================*/
+
+    .Phylosop {
+        background-color: var(--color_sub_background);
+        width: 95%;
+        margin-left: auto;
+        position: relative;
+        margin-right: auto;
+        margin-top: 60px;
+
+    }
+
+    .Phylosop-background {
+
+        background-image: url("../assets/img/singlepage/background.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 77% 50%;
+        top: 100%;
+        height: 200px;
+        position: relative;
+        width: auto;
+    }
+
+
+    .Phylosop-background::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: var(--color_filtro);
+    }
+
+
+    .Phylosop-background>.title_Phylosop_main {
+        font-size: var(--font_parrafo_mb);
+        text-align: center;
+        padding-top: 27px;
+        z-index: 50;
+        position: relative;
+
+
+    }
+
+    .Phylosop-background>.title_Phylosop_ {
+        font-size: var(--font_h2_mb_noto);
+        text-align: center;
+        padding-top: 20px;
+        z-index: 50;
+        position: relative;
+
+    }
+
+
+    .main_Phylosop>h3 {
+        font-size: var(--font_h3_mb);
+        text-align: left;
+        padding: 2%;
+    }
+
+    .main_Phylosop>p {
+        font-size: var(--font_parrafo_mb);
+        padding-bottom: 5%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    /*====company profile=====*/
+
+    .company_profile {
+
+        margin-top: 60px;
+        background-color: var(--color_sub_background);
+        padding-bottom: 35px;
+
+    }
+
+
+    .info_profile.col-lg-6.col-xs-3 {
+        background-color: #f1fafe;
+
+    }
+
+    .info_profile>ul>li>p {
+        font-size: var(--font_parrafo_mb);
+        padding-top: 14.5px;
+        border-bottom-color: var(--color_sub);
+        border-style: dashed;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        border-width: 0.5px;
+        padding: 9px;
+    }
+
+    .title_company_main {
+        text-align: center;
+    }
+
+    .title_company_ {
+        text-align: center;
+    }
+
+    .info_data>ul>li>p {
+        font-size: var(--font_parrafo_mb);
+        padding: 9px;
+        border-bottom-color: var(--color_sub);
+        border-style: dashed;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        border-width: 0.5px;
+    }
+
+
+
+    .maps_title {
+        margin-bottom: 5px;
+        font-size: var(--font_parrafo_mb);
+
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    .col_map {
+        font-size: var(--font_parrafo_mb);
+    }
+
+    /*====Company  history =====*/
+
+    .company_history {
+        margin-top: 60px;
+        margin-bottom: 360px;
+    }
+
+    .row_company_history>.title_history_main {
+        text-align: center;
+        padding-bottom: 5px;
+    }
+
+    .row_company_history>.title_history_ {
+        text-align: center;
+        padding-bottom: 5px;
+    }
+
+    .info_history {
+        background-color: #f1fafe;
+        font-size: var(--font_parrafo_mb);
+
+    }
+
+
+    .info_history>ul>li>p {
+        font-size: var(--font_parrafo_mb);
+        padding-top: 14.5px;
+        border-bottom-color: var(--color_sub);
+        border-style: dashed;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        border-width: 0.5px;
+        padding: 9px;
+
+    }
+
+    .info_history_data>ul>li>p {
+        font-size: var(--font_parrafo_mb);
+        font-size: var(--font_parrafo_mb);
+        padding-top: 14.5px;
+        border-bottom-color: var(--color_sub);
+        border-style: dashed;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        border-width: 0.5px;
+        padding: 9px;
+    }
+
+    /*=========contact=====================*/
+
+    .contact {
+        margin-top: 20%;
+
+    }
+
+    .text_contact {
+        width: 100%;
+    }
+
+    .container_contact>.titlesub_contact {
+        font-size: var(--font_h2_mb_noto);
+        margin-bottom: 6px;
+    }
+
+    .buttons_contact {
+        display: flow-root list-item;
+        margin-top: 25px;
+        margin-left: 25%;
+        margin-right: 20%;
+    }
+
+    .container_contact>.text_contact>h4 {
+        font-size: var(--font_h4_mb);
+    }
+
+    .button_mail.col-lg-6>.button_mail_button {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 7px;
+        padding-bottom: 11px;
+
+    }
+
+    .Phone_contact>ul>li>h5 {
+
+        font-size: var(--font_h5_mb);
+        text-align: center;
+
+    }
+
+    .Phone_contact>ul>li>h2 {
+        font-size: var(--font_h2_lato_mb);
+        margin-left: 0px;
+        text-align: center;
+        margin-top: 2px;
+    }
+
+    .information_contact {
+
+        width: 80%;
+
+    }
+
+    /*=============Footer==========================*/
+
+    .logo_img>embed {
+        width: 25%;
+
+    }
+
+    .Menu_footer {
+        width: 90%;
+    }
+
+    .footer_items>h2 {
+        font-size: var(--font_h2_mb_noto);
+
+    }
+
+    .footer_items>p {
+        font-size: var(--font_parrafo_mb);
+
+    }
+
+    .submenu_1>li>.viñeta>p {
+        font-size: var(--font_parrafo_mb);
+    }
+
+    .submenu>li>p {
+        font-size: var(--font_parrafo_mb);
+    }
+
+}
+
+
+
+
+@media(max-width:375px) {
+
+    .messege {
+        margin-top: 50%;
+        background-color: var(--color_sub_background);
+    }
+
+    .info_data>ul>li>p {
+
+        padding: 10.2px;
     }
 
 

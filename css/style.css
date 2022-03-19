@@ -1017,6 +1017,7 @@ embed {
     position: relative;
     height: auto;
     display: flex;
+    width: 15.55%;
 }
 
 .button_inst_1 {
@@ -1353,7 +1354,7 @@ PANTALLA DE PHONES - EXTRA SMALL (xs) - revisamos en movil horizontal 480px o ve
     }
 
     .logo-img {
-        max-width: 100%;
+        max-width: 55%;
         height: auto;
         margin-left: auto;
         margin-right: auto;
@@ -1410,9 +1411,49 @@ PANTALLA DE PHONES - EXTRA SMALL (xs) - revisamos en movil horizontal 480px o ve
 
 
 /* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) {}
+@media(min-width: 768px) {
 
+    .logo-img {
+        max-width: 55%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
+    .carousel_description {
+        margin-bottom: 18.6%;
+        margin-top: -12%;
+    }
+
+    .header-area .academy-main-menu {
+
+        top: 65%;
+    }
+
+    .lead-text {
+        font-size: 50px;
+    }
+
+    .lead {
+
+        margin-top: 50px;
+    }
+
+    .content-menu {
+
+        width: 100%;
+    }
+
+    .header-area .academy-main-menu {
+        top: 40%;
+    }
+
+    .content-lead-parragraf {
+        width: 80%;
+        margin-top: 27px;
+    }
+
+}
 
 /*=============================================
 2.-RESPONSIVE ESCRITORIO MEDIANO
@@ -1470,6 +1511,7 @@ PANTALLA DE ESCRITORIO MEDIANO - MEDIUM (md) - revisamos en tablet horizontal 10
 
     .lead-text {
         font-size: 83px;
+        margin-top: 18px;
     }
 
     .content-lead-parragraf {
@@ -1490,10 +1532,22 @@ PANTALLA DE ESCRITORIO MEDIANO - MEDIUM (md) - revisamos en tablet horizontal 10
     }
 
     .Area3_text_area.col-lg-4 {
-         margin-left: 9%;
+        margin-left: 9%;
     }
 
+    .buttons_inst {
+        width: 30%;
+    }
 
+    .buttons_contact {
+
+        margin-top: 80px;
+    }
+
+    .text_contact {
+        width: 58%;
+
+    }
 }
 
 /* XX-Large devices (larger desktops, 1400px and up)*/
@@ -1599,6 +1653,10 @@ PANTALLA DE ESCRITORIO MEDIANO - MEDIUM (md) - revisamos en tablet horizontal 10
 
     }
 
+    .lead {
+
+        margin-top: -50px;
+    }
 
     .content-lead-parragra {
         width: 37%;
@@ -1628,4 +1686,129 @@ PANTALLA DE ESCRITORIO MEDIANO - MEDIUM (md) - revisamos en tablet horizontal 10
     }
 
 
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .header-area .academy-main-menu .classy-navbar {
+        padding: 0;
+        padding-left: 2em;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .header-area .academy-main-menu .classy-navbar {
+        padding: 0;
+        padding-left: 2em;
+    }
+}
+
+.header-area .academy-main-menu .classy-navbar .classynav ul li a {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.header-area .academy-main-menu .classy-navbar .classynav ul li a:hover,
+.header-area .academy-main-menu .classy-navbar .classynav ul li a:focus {
+    color: #69bc5f;
+}
+
+.header-area .academy-main-menu .classynav {
+    padding-left: 2em;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .header-area .academy-main-menu .classynav {
+        padding-left: 1em;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .header-area .academy-main-menu .classynav {
+        padding-left: 0;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .header-area .academy-main-menu .classynav {
+        padding-left: 0;
+    }
+}
+
+.header-area .academy-main-menu .calling-info {
+    position: relative;
+    padding-left: 80px;
+    overflow: hidden;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .header-area .academy-main-menu .calling-info {
+        padding-left: 50px;
+    }
+}
+
+.header-area .academy-main-menu .calling-info .call-center {
+    position: relative;
+    z-index: 1;
+    background: #61ba6d;
+    background: -webkit-linear-gradient(to right, #61ba6d, #83c331);
+    background: linear-gradient(to right, #61ba6d, #83c331);
+    padding: 0 40px;
+    line-height: 85px;
+    height: 85px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .header-area .academy-main-menu .calling-info .call-center {
+        padding: 0 15px 0 30px;
+    }
+}
+
+.header-area .academy-main-menu .calling-info .call-center a {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    display: block;
+}
+
+.header-area .academy-main-menu .calling-info .call-center a i {
+    width: 45px;
+    height: 45px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 41px;
+    font-size: 18px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .header-area .academy-main-menu .calling-info .call-center a i {
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .header-area .academy-main-menu .calling-info .call-center a span {
+        display: none;
+    }
+}
+
+.header-area .academy-main-menu .calling-info .call-center:before {
+    position: absolute;
+    width: 50px;
+    height: 120%;
+    top: 3px;
+    left: -28px;
+    z-index: 1;
+    background-color: #61ba6d;
+    content: '';
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .header-area .academy-main-menu .calling-info .call-center:before {
+        width: 42px;
+    }
 }

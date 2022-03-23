@@ -1,33 +1,7 @@
 @import url('../css/maps.css');
 @import url('../css/classy-nav.min.css');
 
-/*
-colors and styles
-1.Header Mainpage
-2.Navigaton
-3.
-4.
-5.
-6.
-7.
-8.
-9.
-10.
-==============================================
-/*
-postions and responsives styles
-1.Resposive header pc
-2.Navigaton
-3.
-4.
-5.
-6.
-7.
-8.
-9.
-10.
 
-*/
 
 
 /*=================================================
@@ -668,9 +642,7 @@ embed {
 }
 
 .img_profile:hover .item_crop {
-    margin-block-start: -120px;
-    height: 700px;
-    max-width: auto;
+ 
 
 
 }
@@ -865,7 +837,7 @@ embed {
 .Area3_img>img {
     width: 100%;
     height: auto;
-    padding-right: 80px;
+
 }
 
 .background-Area3 {
@@ -888,7 +860,7 @@ embed {
 
 
 .Area3_img.col-lg-6 {
-    float: inline-end;
+    float: right;
 }
 
 
@@ -1353,256 +1325,186 @@ footer {
     margin-top: 7px;
 }
 
-
-/*=============================================
-1.-RESPONSIVE PANTALLA DE PHONES
-PANTALLA DE PHONES - EXTRA SMALL (xs) - revisamos en movil horizontal 480px o vertical 320px
-=============================================*/
-
-@media(max-width:767px) {
-
-    .logo_container {
-
-        margin-bottom: 10px;
-        margin-left: -7%;
-        margin-right: 15%;
-        ;
-    }
-
-    .nav_container {
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-        margin: 0px 0px 30px 0px;
+/*pantallas laptop  1024px a 110px*/
 
 
-    }
-
-    .logo-img {
-        max-width: 55%;
-        height: auto;
-        margin-left: auto;
-        margin-right: auto;
-
-
-    }
-
-
-    .nav_navigation {
-        color: var(--bg_white);
-        display: flex;
-        justify-content: center;
-        margin-left: 50px;
-        margin-right: 50px;
-    }
-
-
-    .nav_time {
-        display: flex;
-        justify-content: center;
-        margin: 0px;
-    }
-
-
-    .nav_container>.nav_navigation>.nav_item>.nav_item_information {
-        font-size: var(--font_parrafo_mb);
-        font-family: var(--font-noto)
-    }
-
-    .nav_container>.nav_navigation>.nav_item>.nav_item_phone {
-        font-size: var(--font_parrafo_mb);
-
-
-    }
-
-
-
-    .nav_time {
-
-        font-size: var(--font_navigation_nav_time_mb);
-
-
-    }
-
+@media only screen and (min-width:1024px) and (max-width:1100px) {
 
     /*=================================================
-2 . - slider responsive
+Header-Mainpage colors and styles
 ===================================================*/
-    .carousel_caption {
+    .logo-img {
+        max-width: 30%;
+        margin-top: 30px;
         margin-left: 50px;
     }
 
+    nav ul {
 
-
-
-
-
-
-
-    .carousel_section {
-        margin-top: -55%;
+        margin-left: 10%;
     }
 
-
-    .carousel_item img {
-        width: auto;
-        height: 600px;
+    nav {
+        margin-top: -10px;
     }
 
-    .carousel_title {
-        font-size: 27px;
-    }
-
+    /*=================================================
+ carousel
+===================================================*/
 
     .carousel_description {
-        left: -28%;
-        font-size: var(--font_p4);
-        margin-bottom: 40%;
+        margin-bottom: 9.6%;
+        margin-top: -14.6%;
     }
 
-    .carousel_caption>.linea {
-        width: 100%;
+    .carousel_caption {
+        margin-top: 62px;
     }
 
-
-
-
-
-
-
-
-
-}
-
-
-
-/* Medium devices (tablets, 768px and up)*/
-@media(min-width: 768px) {
-
-
-    .logo_container {
-        margin-top: 30px;
-        display: block ruby;
-        margin-left: 0px;
-    }
-
-    .nav_container {
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-        margin: 0px 0px 30px 0px;
-
-
-    }
-
-    .logo-img {
-        max-width: 100%;
-
-
-
-    }
-
-
-    .nav_navigation {
-
-        margin: auto;
-
-    }
-
-
-    .nav_time {
-        display: flex;
-        justify-content: center;
-        margin: 0px;
-    }
-
-    .nav_navigation {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-    }
-
-
-
-
-
-
-
-
-
-
-    .carousel_description {
-        margin-bottom: 18.6%;
-        margin-top: -12%;
-    }
-
-    .header-area .academy-main-menu {
-
-        top: 65%;
+    /*===================================================
+lead
+===================================================*/
+    .lead {
+        margin-top: 0px;
     }
 
     .lead-text {
-        font-size: 50px;
-    }
-
-    .lead {
-
-        margin-top: 50px;
-    }
-
-    .content-menu {
-
-        width: 100%;
-    }
-
-    .header-area .academy-main-menu {
-        top: 40%;
+        font-size: 70px;
     }
 
     .content-lead-parragraf {
-        width: 80%;
-        margin-top: 27px;
+        width: 50%;
+        margin-top: 10px;
+    }
+
+    .lead-text>h2 {
+        margin-top: -30px;
+    }
+
+    /*=====================================================
+news
+=====================================================*/
+    .news {
+        width: 85%;
+
+    }
+
+    /*===================================================
+area2
+===================================================*/
+
+    .Area2_text_area.col-lg-4 {
+        line-height: 28px;
+        padding: 30px;
+    }
+
+    .item_crop {
+        width: 57.55%;
+        height: 53%;
+    }
+
+    /*=======================================================
+ area3
+ ===========================================================*/
+
+    .dog_area3 {
+        margin-top: -24%;
+    }
+
+    .Area_title_3 {
+        padding-right: 210px;
+
+    }
+
+    .Area_sub_title_3 {
+
+        padding-right: 30px;
+    }
+
+    .text_dog_area3 {
+
+        margin-top: -210px;
+
+    }
+
+    .Area3_text_area.col-lg-4 {
+
+        padding-left: 50px;
+        padding-bottom: 30px;
+        padding-right: 18px;
+        padding-top: 30px;
+        line-height: 20px;
+        margin-left: 35px;
+        margin-right: 60px;
+    }
+
+
+
+    /*==============================
+ instagram
+===============================*/
+    .instagram {
+        width: 50%;
+    }
+
+    .buttons_inst {
+        width: auto;
+        justify-content: center;
+    }
+
+    .item_instagram {
+        width: auto;
+
+    }
+
+    /*==============================
+contact
+===============================*/
+
+    .text_contact {
+        width: 88%;
+    }
+
+    .button_mail.col-lg-6>.button_mail_button {
+
+        padding-left: 30px;
+        padding-right: 30px;
+
+    }
+
+    .Phone_contact>ul>li>h2 {
+        margin-left: -15%;
+    }
+
+    .Phone_contact>ul>li>h5 {
+        margin-left: -15%;
+    }
+
+    /*==============================
+footer
+===============================*/
+
+    .Menu_footer {
+        width: 70%;
+
     }
 
 }
 
-/*=============================================
-2.-RESPONSIVE ESCRITORIO MEDIANO
-PANTALLA DE ESCRITORIO MEDIANO - MEDIUM (md) - revisamos en tablet horizontal 1024px
-=============================================*/
+/*pantallas laptop  1100px a 1200px*/
 
-@media(max-width:1199px) and (min-width:992px) {
-
-    .carousel_description {
-
-        margin-bottom: 4.6%;
-        margin-top: -14.6%;
-
-    }
-
-}
-
-/* Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) {}
-
-
-
-
-
-
-
-/* X-Large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {
-
+@media only screen and (min-width:1100px) and (max-width:1200px) {
     /*=================================================
 1 . - Header-Mainpage
 ===================================================*/
 
     .logo-img {
-        max-width: 60%;
+        max-width: 40%;
         height: auto;
         margin-left: 50px;
         margin-right: 50px;
+        margin-top: 20px;
+
 
     }
 
@@ -1612,8 +1514,10 @@ PANTALLA DE ESCRITORIO MEDIANO - MEDIUM (md) - revisamos en tablet horizontal 10
 
     .carousel_description {
         margin-bottom: 6.6%;
-        margin-top: -12%;
+
+        margin-top: -15%;
     }
+
 
 
 
@@ -1626,122 +1530,260 @@ PANTALLA DE ESCRITORIO MEDIANO - MEDIUM (md) - revisamos en tablet horizontal 10
         width: 83%;
     }
 
-    .lead-text {
-        font-size: 83px;
-        margin-top: 18px;
-    }
-
-    .content-lead-parragraf {
-        width: 60%;
-    }
-
+    /*============================
+  news
+  ============================*/
     .news {
         width: 79%;
 
     }
 
+    /*==============================
+ lead
+*/
+
+    .lead {
+        margin-top: -30px;
+    }
+
+    .lead-text {
+        font-size: 70px;
+
+    }
+
+    .content-lead-parragraf {
+        width: 60%;
+        margin-top: 15px;
+        padding-right: 74px;
+    }
+
+    /*==============================
+ area1
+*/
+
+    .item_crop {
+        width: 62.55%;
+        height: 53%;
+    }
+
+    /*==============================
+Araea 2
+================================*/
+
     .Area2_text_area.col-lg-4 {
         line-height: 30px;
+        padding-right: 30px;
+        padding-left: 70px;
     }
+
+    /*==============================
+Araea 3
+================================*/
 
     .dog_area3 {
-        margin-top: -21%;
+        margin-top: -23%;
     }
 
+    .Area_title_3 {
+        padding-right: 249px;
+
+    }
+
+    .Area_sub_title_3 {
+
+        padding-right: 10px;
+    }
+
+
     .Area3_text_area.col-lg-4 {
-        margin-left: 9%;
+
+        padding-left: 50px;
+        padding-bottom: 30px;
+        padding-right: 18px;
+        padding-top: 30px;
+        line-height: 20px;
+        margin-left: 35px;
+        margin-right: 60px;
+    }
+
+
+    /*==============================
+instagram
+================================*/
+    .instagram {
+        width: 45%;
+
+    }
+
+    .item_instagram {
+
+        width: auto;
+
     }
 
     .buttons_inst {
         width: 30%;
     }
 
+
+
+    /*==============================
+- contact
+===============================*/
     .buttons_contact {
 
         margin-top: 80px;
     }
 
     .text_contact {
-        width: 58%;
-
-    }
-}
-
-
-@media(min-width: 1024px) {
-
-    /*=================================================
-1 . - Header-Mainpage colors and styles
-===================================================*/
-    .logo-img {
-        max-width: 30%;
-        margin-top: 30px;
-        margin-left: 50px;
-    }
-
-    nav ul {
-
-        margin-left: 10%;
-    }
-
-    nav {
-        margin-top: -10px;
-    }
-
-    /*=================================================
-2 . - carousel
-===================================================*/
-
-    .carousel_description {
-        margin-bottom: 4.6%;
-        margin-top: -18.6%;
-    }
-
-    .carousel_caption {
-        margin-top: 62px;
-    }
-
-    /*===================================================
-3.-lead
-===================================================*/
-    .lead {
-        margin-top: 0px;
-    }
-
-
-    /*=====================================================
-news
-=====================================================*/
-    .news {
         width: 85%;
 
     }
 
-    /*===================================================
-3.-area2
-===================================================*/
 
-    .Area2_text_area.col-lg-4 {
-        line-height: 28px;
-        padding: 30px;
+    .button_mail.col-lg-6>.button_mail_button {
+
+        padding-left: 50px;
+        padding-right: 50px;
     }
 
+
+
+    .Phone_contact>ul>li>h2 {
+        margin-left: 0px;
+    }
+
+    .Phone_contact>ul>li>h5 {
+        margin-left: 0px;
+    }
+
+    .buttons_contact {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /*==== menu*/
+
+    .Menu_footer {
+        width: 80%;
+
+    }
+
+
+}
+
+
+
+/*pantallas laptop  1200px a 1200px*/
+
+@media only screen and (min-width:1200px) and (max-width:1300px) {
+    /*=================================================
+1 . - Header-Mainpage
+===================================================*/
+
+    .logo-img {
+        max-width: 30%;
+        height: auto;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 20px;
+
+
+    }
+
+    .nav_container>.nav_navigation>.nav_item {
+        padding-right: 10px;
+    }
+
+    .carousel_description {
+        margin-bottom: 6.6%;
+
+        margin-top: -15%;
+    }
+
+
+
+
+    .header-area .academy-main-menu {
+        top: 63%;
+
+    }
+
+    .content-menu {
+        width: 83%;
+    }
+
+
+    .time_data {
+        margin-top: 60px;
+        margin-right: -38.2%;
+    }
+
+
+
+    /*============================
+  news
+  ============================*/
+    .news {
+        width: 79%;
+
+    }
+
+    /*==============================
+ lead
+*/
+
+    .lead {
+        margin-top: -30px;
+    }
+
+    .lead-text {
+        font-size: 85px;
+
+    }
+
+    .content-lead-parragraf {
+        width: 60%;
+        margin-top: 15px;
+        padding-right: 74px;
+    }
+
+    /*==============================
+ area1
+*/
+
     .item_crop {
-        width: 54.55%;
+        width: 66.55%;
         height: 53%;
     }
 
-    /*=======================================================
-    4.- area3
- ===========================================================*/
+    /*==============================
+Araea 2
+================================*/
+
+    .Area2_text_area.col-lg-4 {
+        line-height: 30px;
+        padding-right: 30px;
+        padding-left: 70px;
+    }
+
+    /*==============================
+Araea 3
+================================*/
 
     .dog_area3 {
-        margin-top: -27%;
+        margin-top: -23%;
     }
 
     .Area_title_3 {
-        padding-right: 150px;
+        padding-right: 170px;
 
+    }
+
+    .Area_sub_title_3 {
+
+        padding-right: 10px;
     }
 
 
@@ -1756,138 +1798,195 @@ news
         margin-right: 60px;
     }
 
-    .Area3_img>img {
+    .text_dog_area3 {
 
-        padding-right: 50px;
+        margin-top: -250px;
+
     }
 
     /*==============================
-5.- instagram
-===============================*/
+instagram
+================================*/
     .instagram {
-        width: 50%;
-    }
+        width: 45%;
 
-    .buttons_inst {
-        width: auto;
-        justify-content: center;
     }
 
     .item_instagram {
+
         width: auto;
 
     }
 
+    .buttons_inst {
+        width: 30%;
+    }
+
+
+
     /*==============================
-6.- contact
+- contact
 ===============================*/
+    .buttons_contact {
+
+        margin-top: 80px;
+    }
 
     .text_contact {
-        width: 90%;
+        width: 73%;
+
     }
+
 
     .button_mail.col-lg-6>.button_mail_button {
 
-        padding-left: 30px;
-        padding-right: 30px;
-
+        padding-left: 50px;
+        padding-right: 50px;
     }
 
+
+
     .Phone_contact>ul>li>h2 {
-        margin-left: -15%;
+        margin-left: 0px;
     }
 
     .Phone_contact>ul>li>h5 {
-        margin-left: -15%;
+        margin-left: 0px;
     }
 
-    /*==============================
-footer
-===============================*/
+    .buttons_contact {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /*==== menu*/
 
     .Menu_footer {
-        width: 70%;
+        width: 80%;
 
     }
+
+
 
 }
 
 
+@media only screen and (min-width:1300px) and (max-width:1500px) {
 
-@media(min-width: 1024px) {
+    /*==============================
+navbar
+===============================*/
+    .time_data {
 
-    /*=================================================
-1 . - Header-Mainpage colors and styles
-===================================================*/
+        margin-top: 69px;
+        margin-right: -37.2%;
+    }
+
+
+
     .logo-img {
         max-width: 30%;
-        margin-top: 30px;
+        height: auto;
         margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 20px;
+
+
     }
 
-    nav ul {
-
-        margin-left: 10%;
+    .nav_container>.nav_navigation>.nav_item {
+        padding-right: 10px;
     }
-
-    nav {
-        margin-top: -10px;
-    }
-
-    /*=================================================
-2 . - carousel
-===================================================*/
 
     .carousel_description {
-        margin-bottom: 4.6%;
-        margin-top: -18.6%;
-    }
+        margin-bottom: 6.6%;
 
-    .carousel_caption {
-        margin-top: 62px;
-    }
-
-    /*===================================================
-3.-lead
-===================================================*/
-    .lead {
-        margin-top: 0px;
+        margin-top: -15%;
     }
 
 
-    /*=====================================================
-news
-=====================================================*/
+
+
+    .header-area .academy-main-menu {
+        top: 63%;
+
+    }
+
+    .content-menu {
+        width: 83%;
+    }
+
+
+    .time_data {
+        margin-top: 60px;
+        margin-right: -32.2%;
+    }
+
+
+
+    /*============================
+  news
+  ============================*/
     .news {
-        width: 85%;
+        width: 79%;
 
     }
 
-    /*===================================================
-3.-area2
-===================================================*/
+    /*==============================
+ lead
+*/
 
-    .Area2_text_area.col-lg-4 {
-        line-height: 28px;
-        padding: 30px;
+    .lead {
+        margin-top: -30px;
     }
+
+    .lead-text {
+        font-size: 85px;
+
+    }
+
+    .content-lead-parragraf {
+        width: 60%;
+        margin-top: 15px;
+        padding-right: 74px;
+    }
+
+    /*==============================
+ area1
+*/
 
     .item_crop {
-        width: 54.55%;
+        width: 76.55%;
         height: 53%;
     }
 
-    /*=======================================================
-    4.- area3
- ===========================================================*/
+    /*==============================
+Araea 2
+================================*/
+
+    .Area2_text_area.col-lg-4 {
+        line-height: 30px;
+        padding-right: 30px;
+        padding-left: 70px;
+    }
+
+    /*==============================
+Araea 3
+================================*/
 
     .dog_area3 {
-        margin-top: -27%;
+        margin-top: -23%;
     }
 
     .Area_title_3 {
-        padding-right: 150px;
+        padding-right: 170px;
 
+    }
+
+    .Area_sub_title_3 {
+
+        padding-right: 10px;
     }
 
 
@@ -1902,365 +2001,523 @@ news
         margin-right: 60px;
     }
 
-    .Area3_img>img {
+    .text_dog_area3 {
 
-        padding-right: 50px;
+        margin-top: -280px;
+
     }
 
     /*==============================
-5.- instagram
-===============================*/
+instagram
+================================*/
     .instagram {
-        width: 50%;
-    }
+        width: 45%;
 
-    .buttons_inst {
-        width: auto;
-        justify-content: center;
     }
 
     .item_instagram {
+
         width: auto;
 
     }
 
+    .buttons_inst {
+        width: 30%;
+    }
+
+
+
     /*==============================
-6.- contact
+- contact
 ===============================*/
+    .buttons_contact {
+
+        margin-top: 80px;
+    }
 
     .text_contact {
-        width: 90%;
+        width: 73%;
+
     }
+
 
     .button_mail.col-lg-6>.button_mail_button {
 
-        padding-left: 30px;
-        padding-right: 30px;
-
+        padding-left: 50px;
+        padding-right: 50px;
     }
 
+
+
     .Phone_contact>ul>li>h2 {
-        margin-left: -15%;
+        margin-left: 0px;
     }
 
     .Phone_contact>ul>li>h5 {
-        margin-left: -15%;
+        margin-left: 0px;
     }
 
-    /*==============================
-footer
-===============================*/
+    .buttons_contact {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /*==== menu*/
 
     .Menu_footer {
-        width: 70%;
+        width: 80%;
 
     }
+
+
 
 }
 
 
-@media(min-width: 1280px) {
-    /*=======================*
-slider
-==========================*/
+@media only screen and (min-width:1500px) and (max-width:3840px) {
+
+    /*==============================
+navbar
+===============================*/
+    .time_data {
+
+        margin-top: 69px;
+        margin-right: -37.2%;
+    }
+
+
+
+    .logo-img {
+        max-width: 20%;
+        height: auto;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 20px;
+
+
+    }
+
+    .nav_container>.nav_navigation>.nav_item {
+        padding-right: 10px;
+    }
 
     .carousel_description {
-        margin-bottom: 4.6%;
-        margin-top: -14.6%;
+        margin-bottom: 1.6%;
+
+        margin-top: -15%;
+    }
+
+
+
+
+    .header-area .academy-main-menu {
+        top: 63%;
+
+    }
+
+    .content-menu {
+        width: 83%;
+    }
+
+
+    .time_data {
+        margin-top: 60px;
+        margin-right: -25.2%;
+    }
+
+
+
+    /*============================
+  news
+  ============================*/
+    .news {
+        width: 70%;
+
     }
 
     /*==============================
-lead
-===============================*/
+ lead
+*/
+
     .lead {
-        margin-top: -16px;
+        margin-top: -30px;
+    }
+
+    .lead-text {
+        font-size: 120px;
+
+    }
+
+    .content-lead-parragraf {
+        width: 60%;
+        margin-top: 15px;
+        padding-right: 74px;
     }
 
     /*==============================
-area2
-===============================*/
+ area1
+*/
 
     .item_crop {
-        width: 70%;
+        width: 100%;
         height: 53%;
     }
 
+    /*==============================
+Araea 2
+================================*/
+
+    .Area2_text_area.col-lg-4 {
+        line-height: 30px;
+        padding-right: 30px;
+        padding-left: 70px;
+    }
 
     /*==============================
-area3
-===============================*/
+Araea 3
+================================*/
 
     .dog_area3 {
-        margin-top: -20%;
+        margin-top: -25%;
+        width: 260px !important;
+        height: 350px !important;
+        margin-left: 60px;
     }
+
+    .Area_title_3 {
+
+        padding-right: 330px;
+
+    }
+
+    .Area_sub_title_3 {
+
+        padding-right: 75px;
+    }
+
 
     .Area3_text_area.col-lg-4 {
-        padding-left: 30px;
+
+        padding-left: 80px;
+        padding-bottom: 30px;
+        padding-right: 80px;
+        padding-top: 30px;
+        line-height: 40px;
+        margin-left: 7%;
+    }
+
+    .text_dog_area3 {
+
+        margin-top: -400px;
+    }
+
+
+
+    /*==============================
+instagram
+================================*/
+
+
+    .item_instagram {
+
+        width: 70%;
 
     }
+
+    .buttons_inst {
+        width: 30%;
+    }
+
+
+
+    /*==============================
+- contact
+===============================*/
+    .buttons_contact {
+
+        margin-top: 80px;
+    }
+
+    .text_contact {
+        width: 49%;
+
+    }
+
+
+    .button_mail.col-lg-6>.button_mail_button {
+
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+
+
+    .Phone_contact>ul>li>h2 {
+        margin-left: 0px;
+    }
+
+    .Phone_contact>ul>li>h5 {
+        margin-left: 0px;
+    }
+
+    .buttons_contact {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /*==== menu*/
+
+    .Menu_footer {
+        width: 80%;
+
+    }
+
+
+    /*==========navigation*/
+    /*Navigation style */
+
+.header-area .academy-main-menu {
+    position: absolute;
+    width: 100%;
+    background-color: transparent;
+    top: 82%;
+    z-index: 1000;
+    left: 0;
+    right: 0;
+}
+
+.content-menu {
+
+    position: relative;
+    margin: auto;
+    width: 58.33333333%;
+
 
 
 }
 
-    /* XX-Large devices (larger desktops, 1400px and up)*/
-    @media(min-width: 1400px) {
-        .carousel_description {
-            margin-bottom: 2.6%;
-            margin-top: -12%;
-        }
+.sticky-wrapper {
+    height: 0px !important;
+}
+
+.header-area .academy-main-menu .classy-nav-container {
+    background-color: transparent;
+}
+
+.header-area .academy-main-menu .classy-navbar {
+    background-color: #f5f7fa;
+    height: 50px;
+    padding: 0;
+
+}
 
 
-        .header-area .academy-main-menu .classy-navbar {
+.header-area .is-sticky .academy-main-menu {
+    position: fixed;
+    width: 100%;
+    height: 49px;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #f5f7fa;
+    box-shadow: 0 5px 40px rgba(0, 0, 0, 0.2);
+    background-image: url("../assets/img/icons/logo-blue.svg");
+    background-repeat: no-repeat;
+    background-position-x: 2%;
 
-            height: auto;
-            padding: 0;
-        }
-
-
-        .content-menu {
-            width: 74%;
-        }
-
-
-        .header-area .academy-main-menu {
-
-            top: 65%;
-        }
-
-        .lead-text {
-            font-size: 95px;
-        }
-
-        .content-lead-parragraf {
-            width: 50%;
-
-        }
-
-        .news {
-            width: 70%;
-        }
+}
 
 
-        .Area3 {
-            margin-top: 350px;
-        }
-
-        .Area3_text_area.col-lg-4 {
-            margin-left: 9%;
-
-
-        }
-
-        .dog_area3 {
-            margin-top: -19%;
-
-        }
-
-        .buttons_inst {
-            width: 30%;
-        }
+.header-area .is-sticky .academy-main-menu::after {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    content: '';
+}
 
 
-        .buttons_contact {
-            width: 100%;
+.button-menu {
+    background: linear-gradient(170deg, var(--gradiend_sub), var(--gradient_main));
+    padding: 6px 18px 6px;
+    font-size: var(--font_parrafo_pc);
+    font-family: var(--font-noto);
+    color: var(--color_background);
+    border-radius: 12px;
+    border-color: transparent;
+    display: flex;
+    transition: all 0.4s ease-in;
+}
 
-        }
+.button-menu:hover {
+    background-color: var(--gradiend_sub);
+
+}
+
+.button-menu embed {
+    width: 28px;
+    padding-right: 4px;
 
 
-
-    }
-
+}
 
 
 
 
-    /* lXXX-Large devices (larger desktops, 1900px and up)*/
-    @media only screen and (min-width: 1900px) {
-        .carousel_description {
-            margin-bottom: 3%;
-            margin-top: -10.6%;
-        }
+}
 
 
-        .header-area .academy-main-menu {
-            position: absolute;
-            width: 100%;
-            background-color: transparent;
-            top: 82%;
-            z-index: 1000;
-            left: 0;
-            right: 0;
-        }
-
-        .content-menu {
-
-            position: relative;
-            margin: auto;
-            width: 58.33333333%;
-        }
 
 
-        .lead-text {
-            font-size: 120px;
-
-        }
-
-        .lead {
-
-            margin-top: -50px;
-        }
-
-        .content-lead-parragra {
-            width: 37%;
-        }
 
 
-        .news {
-
-            width: 58.33333333%;
-        }
-
-        .dog_area3 {
-            margin-top: -14%;
-
-        }
 
 
-        .buttons_inst {
-            width: 15.55%;
-        }
 
 
-        .buttons_contact {
-
-            width: 64%;
-
-        }
 
 
-    }
 
-    @media only screen and (min-width: 768px) and (max-width: 991px) {
-        .header-area .academy-main-menu .classy-navbar {
-            padding: 0;
-            padding-left: 2em;
-        }
-    }
 
-    @media only screen and (max-width: 767px) {
-        .header-area .academy-main-menu .classy-navbar {
-            padding: 0;
-            padding-left: 2em;
-        }
-    }
 
-    .header-area .academy-main-menu .classy-navbar .classynav ul li a {
-        font-weight: 700;
-        text-transform: uppercase;
-    }
 
-    .header-area .academy-main-menu .classy-navbar .classynav ul li a:hover,
-    .header-area .academy-main-menu .classy-navbar .classynav ul li a:focus {
-        color: #69bc5f;
-    }
 
-    .header-area .academy-main-menu .classynav {
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .header-area .academy-main-menu .classy-navbar {
+        padding: 0;
         padding-left: 2em;
     }
+}
 
-    @media only screen and (min-width: 992px) and (max-width: 1199px) {
-        .header-area .academy-main-menu .classynav {
-            padding-left: 1em;
-        }
+@media only screen and (max-width: 767px) {
+    .header-area .academy-main-menu .classy-navbar {
+        padding: 0;
+        padding-left: 2em;
     }
+}
 
-    @media only screen and (min-width: 768px) and (max-width: 991px) {
-        .header-area .academy-main-menu .classynav {
-            padding-left: 0;
-        }
+.header-area .academy-main-menu .classy-navbar .classynav ul li a {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.header-area .academy-main-menu .classy-navbar .classynav ul li a:hover,
+.header-area .academy-main-menu .classy-navbar .classynav ul li a:focus {
+    color: #69bc5f;
+}
+
+.header-area .academy-main-menu .classynav {
+    padding-left: 2em;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .header-area .academy-main-menu .classynav {
+        padding-left: 1em;
     }
+}
 
-    @media only screen and (max-width: 767px) {
-        .header-area .academy-main-menu .classynav {
-            padding-left: 0;
-        }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .header-area .academy-main-menu .classynav {
+        padding-left: 0;
     }
+}
 
+@media only screen and (max-width: 767px) {
+    .header-area .academy-main-menu .classynav {
+        padding-left: 0;
+    }
+}
+
+.header-area .academy-main-menu .calling-info {
+    position: relative;
+    padding-left: 80px;
+    overflow: hidden;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
     .header-area .academy-main-menu .calling-info {
-        position: relative;
-        padding-left: 80px;
-        overflow: hidden;
+        padding-left: 50px;
     }
+}
 
-    @media only screen and (min-width: 992px) and (max-width: 1199px) {
-        .header-area .academy-main-menu .calling-info {
-            padding-left: 50px;
-        }
-    }
+.header-area .academy-main-menu .calling-info .call-center {
+    position: relative;
+    z-index: 1;
+    background: #61ba6d;
+    background: -webkit-linear-gradient(to right, #61ba6d, #83c331);
+    background: linear-gradient(to right, #61ba6d, #83c331);
+    padding: 0 40px;
+    line-height: 85px;
+    height: 85px;
+}
 
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
     .header-area .academy-main-menu .calling-info .call-center {
-        position: relative;
-        z-index: 1;
-        background: #61ba6d;
-        background: -webkit-linear-gradient(to right, #61ba6d, #83c331);
-        background: linear-gradient(to right, #61ba6d, #83c331);
-        padding: 0 40px;
-        line-height: 85px;
-        height: 85px;
+        padding: 0 15px 0 30px;
     }
+}
 
-    @media only screen and (min-width: 992px) and (max-width: 1199px) {
-        .header-area .academy-main-menu .calling-info .call-center {
-            padding: 0 15px 0 30px;
-        }
-    }
+.header-area .academy-main-menu .calling-info .call-center a {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    display: block;
+}
 
-    .header-area .academy-main-menu .calling-info .call-center a {
-        color: #ffffff;
-        font-size: 14px;
-        font-weight: 700;
-        display: block;
-    }
+.header-area .academy-main-menu .calling-info .call-center a i {
+    width: 45px;
+    height: 45px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 41px;
+    font-size: 18px;
+    text-align: center;
+    margin-right: 20px;
+}
 
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
     .header-area .academy-main-menu .calling-info .call-center a i {
-        width: 45px;
-        height: 45px;
-        border: 2px solid #ffffff;
-        border-radius: 50%;
-        display: inline-block;
-        line-height: 41px;
-        font-size: 18px;
-        text-align: center;
-        margin-right: 20px;
+        margin-right: 10px;
     }
+}
 
-    @media only screen and (min-width: 992px) and (max-width: 1199px) {
-        .header-area .academy-main-menu .calling-info .call-center a i {
-            margin-right: 10px;
-        }
+@media only screen and (max-width: 767px) {
+    .header-area .academy-main-menu .calling-info .call-center a span {
+        display: none;
     }
+}
 
-    @media only screen and (max-width: 767px) {
-        .header-area .academy-main-menu .calling-info .call-center a span {
-            display: none;
-        }
-    }
+.header-area .academy-main-menu .calling-info .call-center:before {
+    position: absolute;
+    width: 50px;
+    height: 120%;
+    top: 3px;
+    left: -28px;
+    z-index: 1;
+    background-color: #61ba6d;
+    content: '';
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
 
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
     .header-area .academy-main-menu .calling-info .call-center:before {
-        position: absolute;
-        width: 50px;
-        height: 120%;
-        top: 3px;
-        left: -28px;
-        z-index: 1;
-        background-color: #61ba6d;
-        content: '';
-        -webkit-transform: rotate(30deg);
-        transform: rotate(30deg);
+        width: 42px;
     }
-
-    @media only screen and (min-width: 992px) and (max-width: 1199px) {
-        .header-area .academy-main-menu .calling-info .call-center:before {
-            width: 42px;
-        }
-    }
+}

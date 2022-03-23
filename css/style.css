@@ -33,77 +33,82 @@ postions and responsives styles
 /*=================================================
 1 . - Header-Mainpage colors and styles
 ===================================================*/
-
-.header_container_nav {
-
+nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
     position: relative;
     z-index: 1000;
+}
+
+nav ul {
+    float: left;
 
 }
 
-.logo_container {
+
+ul.data_navigation {
+    float: right;
+}
+
+nav ul li {
+    float: left;
+}
+
+.data_navigation {
     margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 50px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-
 }
 
-.nav_container {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 50px;
-}
-
-.nav_navigation {
+nav ul li {
+    display: block;
     color: var(--color_background);
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-end;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding-top: 1.5%;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.item-data {
+    font-size: var(--font_parrafo_pc);
+    font-family: var(--font-noto);
+    color: var(--color_background);
 
 
 }
 
-.nav_item {
-    display: block ruby;
+.time_data {
+    float: right;
+    margin-top: -30px;
+}
+
+.nav_item_phone {
+    font-size: var(--font_parrafo_pc);
+    font-family: var(--font-noto);
+    font-weight: var(--font_Regular);
+    color: var(--color_background);
+}
+
+.item-phone {
+    color: var(--color_background);
+    font-family: var(--font-noto);
+    font-size: var(--font_navigation_nav_time_pc);
+    font-weight: var(--font_Regular);
+
 }
 
 .icon_phone {
     max-width: 20px;
 }
 
-.nav_container>.nav_navigation>.nav_item>.nav_item_information {
-    font-size: var(--font_parrafo_pc);
-    padding: 6px;
-    font-family: var(--font-noto);
-}
 
-.nav_container>.nav_navigation>.nav_item>.nav_item_phone {
-    font-size: var(--font_parrafo_pc);
-    font-family: var(--font-noto);
-    font-weight: var(--font_Regular);
 
-}
+
 
 embed {
     width: 20px;
 }
 
-.nav_time {
-    color: var(--color_background);
-    margin-right: 50px;
-    font-family: var(--font-noto);
-    font-size: var(--font_navigation_nav_time_pc);
-    font-weight: var(--font_Regular);
-    display: flex;
-    direction: rtl;
 
-}
 
 
 /*=================================================
@@ -517,6 +522,8 @@ embed {
     border-radius: 2px;
     border: 2px solid transparent;
     transition: all 0.5s ease-in-out;
+    display: flex;
+    margin-top: 20px;
 
 
 }
@@ -625,6 +632,8 @@ embed {
     padding-bottom: 10px;
     padding-left: 9px;
     padding-right: 11px;
+    display: flex;
+    margin-top: 20px;
 }
 
 
@@ -787,6 +796,23 @@ embed {
 }
 
 
+
+.row_icon_black {
+
+    background-color: var(--color_main);
+    border-radius: 100%;
+    width: 19px;
+    height: 19px;
+    padding: 0px;
+    padding: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    color: var(--color_background);
+    font-size: var(--font_parrafo_pc);
+    font-weight: var(--font_Bold);
+}
 
 /*area 3*/
 .Area_title_3 {
@@ -1336,12 +1362,11 @@ PANTALLA DE PHONES - EXTRA SMALL (xs) - revisamos en movil horizontal 480px o ve
 @media(max-width:767px) {
 
     .logo_container {
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
+
         margin-bottom: 10px;
-        margin-left: 15%;
+        margin-left: -7%;
         margin-right: 15%;
+        ;
     }
 
     .nav_container {
@@ -1378,9 +1403,42 @@ PANTALLA DE PHONES - EXTRA SMALL (xs) - revisamos en movil horizontal 480px o ve
         margin: 0px;
     }
 
+
+    .nav_container>.nav_navigation>.nav_item>.nav_item_information {
+        font-size: var(--font_parrafo_mb);
+        font-family: var(--font-noto)
+    }
+
+    .nav_container>.nav_navigation>.nav_item>.nav_item_phone {
+        font-size: var(--font_parrafo_mb);
+
+
+    }
+
+
+
+    .nav_time {
+
+        font-size: var(--font_navigation_nav_time_mb);
+
+
+    }
+
+
     /*=================================================
 2 . - slider responsive
 ===================================================*/
+    .carousel_caption {
+        margin-left: 50px;
+    }
+
+
+
+
+
+
+
+
     .carousel_section {
         margin-top: -55%;
     }
@@ -1406,6 +1464,14 @@ PANTALLA DE PHONES - EXTRA SMALL (xs) - revisamos en movil horizontal 480px o ve
         width: 100%;
     }
 
+
+
+
+
+
+
+
+
 }
 
 
@@ -1413,12 +1479,57 @@ PANTALLA DE PHONES - EXTRA SMALL (xs) - revisamos en movil horizontal 480px o ve
 /* Medium devices (tablets, 768px and up)*/
 @media(min-width: 768px) {
 
-    .logo-img {
-        max-width: 55%;
-        height: auto;
-        margin-left: auto;
-        margin-right: auto;
+
+    .logo_container {
+        margin-top: 30px;
+        display: block ruby;
+        margin-left: 0px;
     }
+
+    .nav_container {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        margin: 0px 0px 30px 0px;
+
+
+    }
+
+    .logo-img {
+        max-width: 100%;
+
+
+
+    }
+
+
+    .nav_navigation {
+
+        margin: auto;
+
+    }
+
+
+    .nav_time {
+        display: flex;
+        justify-content: center;
+        margin: 0px;
+    }
+
+    .nav_navigation {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+
+
+
+
+
+
+
+
 
     .carousel_description {
         margin-bottom: 18.6%;
@@ -1474,8 +1585,14 @@ PANTALLA DE ESCRITORIO MEDIANO - MEDIUM (md) - revisamos en tablet horizontal 10
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {}
 
+
+
+
+
+
+
 /* X-Large devices (large desktops, 1200px and up)*/
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
 
     /*=================================================
 1 . - Header-Mainpage
@@ -1550,265 +1667,600 @@ PANTALLA DE ESCRITORIO MEDIANO - MEDIUM (md) - revisamos en tablet horizontal 10
     }
 }
 
-/* XX-Large devices (larger desktops, 1400px and up)*/
-@media only screen and (min-width: 1400px) {
+
+@media(min-width: 1024px) {
+
+    /*=================================================
+1 . - Header-Mainpage colors and styles
+===================================================*/
+    .logo-img {
+        max-width: 30%;
+        margin-top: 30px;
+        margin-left: 50px;
+    }
+
+    nav ul {
+
+        margin-left: 10%;
+    }
+
+    nav {
+        margin-top: -10px;
+    }
+
+    /*=================================================
+2 . - carousel
+===================================================*/
+
     .carousel_description {
-        margin-bottom: 2.6%;
-        margin-top: -12%;
+        margin-bottom: 4.6%;
+        margin-top: -18.6%;
+    }
+
+    .carousel_caption {
+        margin-top: 62px;
+    }
+
+    /*===================================================
+3.-lead
+===================================================*/
+    .lead {
+        margin-top: 0px;
     }
 
 
-    .header-area .academy-main-menu .classy-navbar {
-
-        height: auto;
-        padding: 0;
-    }
-
-
-    .content-menu {
-        width: 74%;
-    }
-
-
-    .header-area .academy-main-menu {
-
-        top: 65%;
-    }
-
-    .lead-text {
-        font-size: 95px;
-    }
-
-    .content-lead-parragraf {
-        width: 50%;
-
-    }
-
+    /*=====================================================
+news
+=====================================================*/
     .news {
-        width: 70%;
+        width: 85%;
+
+    }
+
+    /*===================================================
+3.-area2
+===================================================*/
+
+    .Area2_text_area.col-lg-4 {
+        line-height: 28px;
+        padding: 30px;
+    }
+
+    .item_crop {
+        width: 54.55%;
+        height: 53%;
+    }
+
+    /*=======================================================
+    4.- area3
+ ===========================================================*/
+
+    .dog_area3 {
+        margin-top: -27%;
+    }
+
+    .Area_title_3 {
+        padding-right: 150px;
+
     }
 
 
-    .Area3 {
-        margin-top: 350px;
+    .Area3_text_area.col-lg-4 {
+
+        padding-left: 50px;
+        padding-bottom: 30px;
+        padding-right: 18px;
+        padding-top: 30px;
+        line-height: 20px;
+        margin-left: 35px;
+        margin-right: 60px;
+    }
+
+    .Area3_img>img {
+
+        padding-right: 50px;
+    }
+
+    /*==============================
+5.- instagram
+===============================*/
+    .instagram {
+        width: 50%;
+    }
+
+    .buttons_inst {
+        width: auto;
+        justify-content: center;
+    }
+
+    .item_instagram {
+        width: auto;
+
+    }
+
+    /*==============================
+6.- contact
+===============================*/
+
+    .text_contact {
+        width: 90%;
+    }
+
+    .button_mail.col-lg-6>.button_mail_button {
+
+        padding-left: 30px;
+        padding-right: 30px;
+
+    }
+
+    .Phone_contact>ul>li>h2 {
+        margin-left: -15%;
+    }
+
+    .Phone_contact>ul>li>h5 {
+        margin-left: -15%;
+    }
+
+    /*==============================
+footer
+===============================*/
+
+    .Menu_footer {
+        width: 70%;
+
+    }
+
+}
+
+
+
+@media(min-width: 1024px) {
+
+    /*=================================================
+1 . - Header-Mainpage colors and styles
+===================================================*/
+    .logo-img {
+        max-width: 30%;
+        margin-top: 30px;
+        margin-left: 50px;
+    }
+
+    nav ul {
+
+        margin-left: 10%;
+    }
+
+    nav {
+        margin-top: -10px;
+    }
+
+    /*=================================================
+2 . - carousel
+===================================================*/
+
+    .carousel_description {
+        margin-bottom: 4.6%;
+        margin-top: -18.6%;
+    }
+
+    .carousel_caption {
+        margin-top: 62px;
+    }
+
+    /*===================================================
+3.-lead
+===================================================*/
+    .lead {
+        margin-top: 0px;
+    }
+
+
+    /*=====================================================
+news
+=====================================================*/
+    .news {
+        width: 85%;
+
+    }
+
+    /*===================================================
+3.-area2
+===================================================*/
+
+    .Area2_text_area.col-lg-4 {
+        line-height: 28px;
+        padding: 30px;
+    }
+
+    .item_crop {
+        width: 54.55%;
+        height: 53%;
+    }
+
+    /*=======================================================
+    4.- area3
+ ===========================================================*/
+
+    .dog_area3 {
+        margin-top: -27%;
+    }
+
+    .Area_title_3 {
+        padding-right: 150px;
+
+    }
+
+
+    .Area3_text_area.col-lg-4 {
+
+        padding-left: 50px;
+        padding-bottom: 30px;
+        padding-right: 18px;
+        padding-top: 30px;
+        line-height: 20px;
+        margin-left: 35px;
+        margin-right: 60px;
+    }
+
+    .Area3_img>img {
+
+        padding-right: 50px;
+    }
+
+    /*==============================
+5.- instagram
+===============================*/
+    .instagram {
+        width: 50%;
+    }
+
+    .buttons_inst {
+        width: auto;
+        justify-content: center;
+    }
+
+    .item_instagram {
+        width: auto;
+
+    }
+
+    /*==============================
+6.- contact
+===============================*/
+
+    .text_contact {
+        width: 90%;
+    }
+
+    .button_mail.col-lg-6>.button_mail_button {
+
+        padding-left: 30px;
+        padding-right: 30px;
+
+    }
+
+    .Phone_contact>ul>li>h2 {
+        margin-left: -15%;
+    }
+
+    .Phone_contact>ul>li>h5 {
+        margin-left: -15%;
+    }
+
+    /*==============================
+footer
+===============================*/
+
+    .Menu_footer {
+        width: 70%;
+
+    }
+
+}
+
+
+@media(min-width: 1280px) {
+    /*=======================*
+slider
+==========================*/
+
+    .carousel_description {
+        margin-bottom: 4.6%;
+        margin-top: -14.6%;
+    }
+
+    /*==============================
+lead
+===============================*/
+    .lead {
+        margin-top: -16px;
+    }
+
+    /*==============================
+area2
+===============================*/
+
+    .item_crop {
+        width: 70%;
+        height: 53%;
+    }
+
+
+    /*==============================
+area3
+===============================*/
+
+    .dog_area3 {
+        margin-top: -20%;
     }
 
     .Area3_text_area.col-lg-4 {
-        margin-left: 9%;
-
-
-    }
-
-    .dog_area3 {
-        margin-top: -19%;
-
-    }
-
-    .buttons_inst {
-        width: 30%;
-    }
-
-
-    .buttons_contact {
-        width: 100%;
-
-    }
-
-
-
-}
-
-
-
-
-
-/* lXXX-Large devices (larger desktops, 1900px and up)*/
-@media only screen and (min-width: 1900px) {
-    .carousel_description {
-        margin-bottom: 3%;
-        margin-top: -10.6%;
-    }
-
-
-    .header-area .academy-main-menu {
-        position: absolute;
-        width: 100%;
-        background-color: transparent;
-        top: 82%;
-        z-index: 1000;
-        left: 0;
-        right: 0;
-    }
-
-    .content-menu {
-
-        position: relative;
-        margin: auto;
-        width: 58.33333333%;
-    }
-
-
-    .lead-text {
-        font-size: 120px;
-
-    }
-
-    .lead {
-
-        margin-top: -50px;
-    }
-
-    .content-lead-parragra {
-        width: 37%;
-    }
-
-
-    .news {
-
-        width: 58.33333333%;
-    }
-
-    .dog_area3 {
-        margin-top: -14%;
-
-    }
-
-
-    .buttons_inst {
-        width: 15.55%;
-    }
-
-
-    .buttons_contact {
-
-        width: 64%;
+        padding-left: 30px;
 
     }
 
 
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    .header-area .academy-main-menu .classy-navbar {
-        padding: 0;
+    /* XX-Large devices (larger desktops, 1400px and up)*/
+    @media(min-width: 1400px) {
+        .carousel_description {
+            margin-bottom: 2.6%;
+            margin-top: -12%;
+        }
+
+
+        .header-area .academy-main-menu .classy-navbar {
+
+            height: auto;
+            padding: 0;
+        }
+
+
+        .content-menu {
+            width: 74%;
+        }
+
+
+        .header-area .academy-main-menu {
+
+            top: 65%;
+        }
+
+        .lead-text {
+            font-size: 95px;
+        }
+
+        .content-lead-parragraf {
+            width: 50%;
+
+        }
+
+        .news {
+            width: 70%;
+        }
+
+
+        .Area3 {
+            margin-top: 350px;
+        }
+
+        .Area3_text_area.col-lg-4 {
+            margin-left: 9%;
+
+
+        }
+
+        .dog_area3 {
+            margin-top: -19%;
+
+        }
+
+        .buttons_inst {
+            width: 30%;
+        }
+
+
+        .buttons_contact {
+            width: 100%;
+
+        }
+
+
+
+    }
+
+
+
+
+
+    /* lXXX-Large devices (larger desktops, 1900px and up)*/
+    @media only screen and (min-width: 1900px) {
+        .carousel_description {
+            margin-bottom: 3%;
+            margin-top: -10.6%;
+        }
+
+
+        .header-area .academy-main-menu {
+            position: absolute;
+            width: 100%;
+            background-color: transparent;
+            top: 82%;
+            z-index: 1000;
+            left: 0;
+            right: 0;
+        }
+
+        .content-menu {
+
+            position: relative;
+            margin: auto;
+            width: 58.33333333%;
+        }
+
+
+        .lead-text {
+            font-size: 120px;
+
+        }
+
+        .lead {
+
+            margin-top: -50px;
+        }
+
+        .content-lead-parragra {
+            width: 37%;
+        }
+
+
+        .news {
+
+            width: 58.33333333%;
+        }
+
+        .dog_area3 {
+            margin-top: -14%;
+
+        }
+
+
+        .buttons_inst {
+            width: 15.55%;
+        }
+
+
+        .buttons_contact {
+
+            width: 64%;
+
+        }
+
+
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .header-area .academy-main-menu .classy-navbar {
+            padding: 0;
+            padding-left: 2em;
+        }
+    }
+
+    @media only screen and (max-width: 767px) {
+        .header-area .academy-main-menu .classy-navbar {
+            padding: 0;
+            padding-left: 2em;
+        }
+    }
+
+    .header-area .academy-main-menu .classy-navbar .classynav ul li a {
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .header-area .academy-main-menu .classy-navbar .classynav ul li a:hover,
+    .header-area .academy-main-menu .classy-navbar .classynav ul li a:focus {
+        color: #69bc5f;
+    }
+
+    .header-area .academy-main-menu .classynav {
         padding-left: 2em;
     }
-}
 
-@media only screen and (max-width: 767px) {
-    .header-area .academy-main-menu .classy-navbar {
-        padding: 0;
-        padding-left: 2em;
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+        .header-area .academy-main-menu .classynav {
+            padding-left: 1em;
+        }
     }
-}
 
-.header-area .academy-main-menu .classy-navbar .classynav ul li a {
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-.header-area .academy-main-menu .classy-navbar .classynav ul li a:hover,
-.header-area .academy-main-menu .classy-navbar .classynav ul li a:focus {
-    color: #69bc5f;
-}
-
-.header-area .academy-main-menu .classynav {
-    padding-left: 2em;
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-    .header-area .academy-main-menu .classynav {
-        padding-left: 1em;
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .header-area .academy-main-menu .classynav {
+            padding-left: 0;
+        }
     }
-}
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    .header-area .academy-main-menu .classynav {
-        padding-left: 0;
+    @media only screen and (max-width: 767px) {
+        .header-area .academy-main-menu .classynav {
+            padding-left: 0;
+        }
     }
-}
 
-@media only screen and (max-width: 767px) {
-    .header-area .academy-main-menu .classynav {
-        padding-left: 0;
-    }
-}
-
-.header-area .academy-main-menu .calling-info {
-    position: relative;
-    padding-left: 80px;
-    overflow: hidden;
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
     .header-area .academy-main-menu .calling-info {
-        padding-left: 50px;
+        position: relative;
+        padding-left: 80px;
+        overflow: hidden;
     }
-}
 
-.header-area .academy-main-menu .calling-info .call-center {
-    position: relative;
-    z-index: 1;
-    background: #61ba6d;
-    background: -webkit-linear-gradient(to right, #61ba6d, #83c331);
-    background: linear-gradient(to right, #61ba6d, #83c331);
-    padding: 0 40px;
-    line-height: 85px;
-    height: 85px;
-}
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+        .header-area .academy-main-menu .calling-info {
+            padding-left: 50px;
+        }
+    }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
     .header-area .academy-main-menu .calling-info .call-center {
-        padding: 0 15px 0 30px;
+        position: relative;
+        z-index: 1;
+        background: #61ba6d;
+        background: -webkit-linear-gradient(to right, #61ba6d, #83c331);
+        background: linear-gradient(to right, #61ba6d, #83c331);
+        padding: 0 40px;
+        line-height: 85px;
+        height: 85px;
     }
-}
 
-.header-area .academy-main-menu .calling-info .call-center a {
-    color: #ffffff;
-    font-size: 14px;
-    font-weight: 700;
-    display: block;
-}
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+        .header-area .academy-main-menu .calling-info .call-center {
+            padding: 0 15px 0 30px;
+        }
+    }
 
-.header-area .academy-main-menu .calling-info .call-center a i {
-    width: 45px;
-    height: 45px;
-    border: 2px solid #ffffff;
-    border-radius: 50%;
-    display: inline-block;
-    line-height: 41px;
-    font-size: 18px;
-    text-align: center;
-    margin-right: 20px;
-}
+    .header-area .academy-main-menu .calling-info .call-center a {
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 700;
+        display: block;
+    }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
     .header-area .academy-main-menu .calling-info .call-center a i {
-        margin-right: 10px;
+        width: 45px;
+        height: 45px;
+        border: 2px solid #ffffff;
+        border-radius: 50%;
+        display: inline-block;
+        line-height: 41px;
+        font-size: 18px;
+        text-align: center;
+        margin-right: 20px;
     }
-}
 
-@media only screen and (max-width: 767px) {
-    .header-area .academy-main-menu .calling-info .call-center a span {
-        display: none;
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+        .header-area .academy-main-menu .calling-info .call-center a i {
+            margin-right: 10px;
+        }
     }
-}
 
-.header-area .academy-main-menu .calling-info .call-center:before {
-    position: absolute;
-    width: 50px;
-    height: 120%;
-    top: 3px;
-    left: -28px;
-    z-index: 1;
-    background-color: #61ba6d;
-    content: '';
-    -webkit-transform: rotate(30deg);
-    transform: rotate(30deg);
-}
+    @media only screen and (max-width: 767px) {
+        .header-area .academy-main-menu .calling-info .call-center a span {
+            display: none;
+        }
+    }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
     .header-area .academy-main-menu .calling-info .call-center:before {
-        width: 42px;
+        position: absolute;
+        width: 50px;
+        height: 120%;
+        top: 3px;
+        left: -28px;
+        z-index: 1;
+        background-color: #61ba6d;
+        content: '';
+        -webkit-transform: rotate(30deg);
+        transform: rotate(30deg);
     }
-}
+
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+        .header-area .academy-main-menu .calling-info .call-center:before {
+            width: 42px;
+        }
+    }
